@@ -1080,17 +1080,26 @@ input:focus ~ label {
         line-height: 22px;
         &:hover{text-decoration: underline;}
     }
-    >div{
+    .news-info{
         background: $white;
         padding: 10px;
         box-shadow: 0 1px 2px rgba(0,0,0,0.19);
         }
 }
 
-.news-prev{
+.news-prew-size{
     width: 100%;
     height: auto;
     display:block;
+    opacity: 0;
+}
+.news-prev{
+    padding: 0 !important;
+    width: 100%;
+    background: url(/res/img/news-logo.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 .all-news{
     margin-left: auto;
@@ -1385,6 +1394,8 @@ footer{
 }
 
 .login-cont{
+    max-width: 250px;
+    margin: auto;
     .btn-40{
         padding:  0 15px;
     }
