@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1; user-scalable=no;" />
+    <meta charset="UTF-8">
+    <title>components</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/7.0.0/normalize.css">
+    <link rel="stylesheet" href="res/css/fonts.css">
+    <link rel="stylesheet" href="res/css/bootstrap.css">
+    <link rel="stylesheet" href="res/css/main.css">
+    <script src="script.js" type="text/javascript"></script>
+</head>
+
+<body>
+   
+   <!-- Шапка -->
+    <div class="gt-header head-border" id="fadeborder">
+        <div class="container">
+            <div class="d-flex f-sb">
+                <!--Левая часть шапки-->
+                <div class="h-left-part">
+                    
+                    <!-- Кнопка раскрытия меню разделов  -->
+                    <div class="spinner-master2">
+                        <input type="checkbox" id="spinner-form2" />
+                        <label for="spinner-form2" class="spinner-spin2">
+                            <div class="spinner2 diagonal part-1"></div>
+                            <div class="spinner2 horizontal"></div>
+                            <div class="spinner2 diagonal part-2"></div>
+                        </label>
+                    </div>
+                    
+                    <!-- Текстовый вариант логотипа ГБПОУ ГТ -->
+                    <a class="a-reset" href="index.html" unselectable="on">
+                        <div class="logo t-shadow">
+                            <div class="name-gt">ГТМАУ</div>
+<!--                            <div class="full-name-gt hidden-sm-down">ГБПОУ <br> Георгиевский техникум </div>-->
+                        </div>
+                    </a>
+
+                </div>
+
+                <!--Правая часть шапки-->
+                <div class="h-right-part d-flex">
+                    <!-- Инпут поиска по сайту + мобильный поиск -->
+                    <div>
+                        <div class="disp-n" id="mobile-tcs"></div>    <!--  кнопка закрытия  -->
+                        <div class="hidden-sm-down search-input lb" id="top-search-f">
+                            <div class="shi"></div>                   <!--  Икнока "лупа" -->
+                            <input type="search" id="input-search" placeholder="поиск по сайту">
+                            
+                            <!-- Результаты поиска -->
+                            <div id="search-resultes">
+                                <div class="s-result">
+                                    <h1>Многие программы электронной </h1>
+                                    <p>Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому</p>
+                                </div>
+                                <div class="s-result">
+                                    <h1> День открытых дверей</h1>
+                                    <p>Есть много вариантов Lorem Ipsum, но большинство из них имеет не всегда приемлемые модификации</p>
+
+                                </div>
+                                <div class="s-result">
+                                    <h1>Студентам</h1>
+                                    <p>Также все другие известные генераторы Lorem Ipsum используют один и тот же текст, который они просто повторяют</p>
+                                </div>
+                                <div class="s-result">
+                                    <h1>Многие программы электронной </h1>
+                                    <p>Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому</p>
+                                </div>
+                                <div class="s-result">
+                                    <h1> День открытых дверей</h1>
+                                    <p>Есть много вариантов Lorem Ipsum, но большинство из них имеет не всегда приемлемые модификации</p>
+
+                                </div>
+                                <div class="s-result">
+                                    <h1>Студентам</h1>
+                                    <p>Также все другие известные генераторы Lorem Ipsum используют один и тот же текст, который они просто повторяют</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="ofside-search"></div> <!-- скрытие поиска -->
+                    </div>
+
+                    <div class="hidden-md-up m-search" id="mobile-search"></div> <!-- активация мобильного поиска -->
+
+                    <a class="btn-40 button btn-white shadow inactive" id="personalpage">
+                        <div class="hidden-md-up" >ЛК</div>
+                        <div class="hidden-sm-down">Личный кабинет</div>
+                    </a>
+                    <button class="btn-40 btn-white shadow " id="go-login">
+                        Войти
+                    </button>
+
+                    <a class="avatar img-size-40"> 
+                        <div class="profile-img" id="p-m-o"></div>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div> 
+
+   <!-- Меню разделов сайта -->
+    <div id="fmenu" class="full-menu">
+
+         <div class="poor-eyesight  hidden-lg-up">
+          <div class="container "><button class="shadow"><div class="eye-img"></div>Версия для слабовидящих </button></div>
+      </div>
+
+      
+        <div class="container">
+           <h1 class="f-menu-heading"><span>Список разделов сайта<br><h4 class="mt-10">ГБПОУ ГТМАУ</h4> </span>
+           </h1>
+            <div class="row justify-content-center pb-10">
+                
+                    <div class="col-xs-12 col-md-8 ">
+                      <div class="sub-full-menu"><ul class="site-sections lb ">
+                        <li><a href="#">Абитуриентам</a></li>
+                        <li><a href="">Студентам</a></li>
+                        <li><a href="">Газета</a></li>
+                        <li><a href="">Карта сайта</a></li>
+                        <li><a href="">Расписание</a></li>
+                        </ul></div>
+                       
+                    </div>
+                
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-xs-12 col-md-4">
+                    
+                    <ul class="site-sections">
+                       <li> <a href="">Главная страница</a></li>
+                        <li class="dropdown">
+                            <a href="#" data-toggle="dropdown">Библиотека ГТМАУ <div class="icon-arrow"></div></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">О нашей библиотеке</a></li>
+                                <li><a href="#">Документы</a></li>
+                                <li><a href="#">Услуги библиотеки</a></li>
+                                <li><a href="#">История библиотеки</a></li>
+                                <li><a href="#">Новые поступления книг</a></li>
+                                <li class="dropdown">
+                                    <a href="#" data-toggle="dropdown">Документы <div class="icon-arrow"></div></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">О нашей библиотеке</a></li>
+                                        <li><a href="#">Документы</a></li>
+                                        <li><a href="#">Услуги библиотеки</a></li>
+                                        <li class="dropdown ">
+                                            <a href="#" data-toggle="dropdown">Документы <div class="icon-arrow"></div></a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="#">История библиотеки</a></li>
+                                                <li><a href="#">Новые поступления fdfdddddddddкниг</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li> <a href="">Расписание</a></li>
+                        <li> <a href="">Сведения об образовательной организации</a> </li>
+                        <li>  <a href="">Трудоустройство</a></li>
+                        <li> <a href="">Информационные ресурсы</a></li>
+                        <li> <a href="">Фильмы о техникуме</a></li>
+                        <li> <a href="">Антитеррористическая деятельность</a> </li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-md-4">
+                    <ul class="site-sections">
+                       <li><a href="">Студенческая жизнь</a></li>
+                        <li class="dropdown">
+                            <a href="#" data-toggle="dropdown">Студентам <div class="icon-arrow"></div></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">О нашей библиотеке</a></li>
+                                <li><a href="#">Документы</a></li>
+                                <li><a href="#">Услуги библиотеки</a></li>
+                                <li><a href="#">История библиотеки</a></li>
+                                <li><a href="#">Новые поступления книг</a></li>
+                                <li class="dropdown">
+                                    <a href="#" data-toggle="dropdown">Документы <div class="icon-arrow"></div></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">О нашей библиотеке</a></li>
+                                        <li><a href="#">Документы</a></li>
+                                        <li><a href="#">Услуги библиотеки</a></li>
+                                        <li class="dropdown ">
+                                            <a href="#" data-toggle="dropdown">Документы <div class="icon-arrow"></div></a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="#">История библиотеки</a></li>
+                                                <li><a href="#">Новые поступления fdfdddddddddкниг</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="">Классному руководителю</a> </li>
+                        <li><a href="">Методический кабинет</a> </li>
+                        <li><a href="">Музей</a> </li>
+                        <li><a href="">История техникума</a> </li>
+                        <li><a href="">Сведения об образовательной организации</a> </li>
+                        <li><a href="">О нас пишут</a> </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Боковое меню -->
+    <div id="personal-menu" class="personal-menu">
+       
+        <div class="p-header"> <!-- шапка бокового меню -->
+           
+            <!-- 1 отображать когда не выполнен вход -->
+            <h6 class="pheding active">Личный кабинет</h6>
+
+            <div class="user-info-min">
+                <div class="avatar active img-size-40">
+                    <div class="profile-img"></div>
+                </div>
+                <div class="user-names">
+                    <span class="firstname">Александр</span><br>
+                    <span class="lastname">Зеленский</span>
+                </div>
+            </div>
+            <div id="p-close"></div>
+        </div>
+        <div class="login-cont active">
+            <div class="login active">
+               <h6>Добро пожаловать</h6>
+                <input type="login" placeholder="email" spellcheck="false">
+                <input type="password" placeholder="Пароль">
+                <a class="forget">Забыли пароль?</a> <!--класс active для показа (после неверного ввода) -->
+                <div class="d-flex">
+                    <button class="btn-primory btn-40" id="enter-to">Войти</button>
+                    <button class="t-grey btn-40" id="registration">Регистрация</button>
+                </div>
+            </div>
+            <div class="registration">
+              <h6>Регистрация</h6>
+               <input type="name" placeholder="Имя">
+                <input type="lastname" placeholder="Фамилия">
+                <input type="emal" placeholder="email" spellcheck="false">
+                <input type="password" placeholder="Пароль">
+                <div class="d-flex">
+                    <button class="t-grey btn-40" id="back-to-enter">Назад</button>
+                    <button class="btn-primory btn-40" id="next-reg-step">Продолжить</button>
+                </div>
+                
+            </div>
+            <div class="congratulations">
+                <h6>Готово!</h6>
+                <p>Письмо с подтверждением регистрации отправлено на ваш email адрес, следуйте инструкциям.</p>
+                <div class="d-flex">
+                    <button class=" btn-primory btn-40" id="back-to-enter2">Выполнить вход</button>
+            </div>
+            </div>
+            
+        </div>
+        <!-- контейнер с датой и распианием --> 
+        <div class="rasp-cont">
+            <h5 class="title bbtn">Расписание на <a href="">25.03.17</a></h5>
+            <div class="select-box-wrapper">
+                <div class="select-box">
+                    <a class="s-item active">124 </a>
+                    <a class="s-item">312 </a>
+                    <a class="s-item">223 </a>
+                </div>
+                <a class="btn-25 btn-primory shadow-sm btn-plus" href="">+</a>
+            </div>
+            <div class="p-menu-table">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td><span class="btn-25 btn-primory">1</span></td>
+                            <td>8:30<br>9:55</td>
+                            <td>
+                                <div class="subject">Русский язык</div>
+                                <div class="d-flex">
+                                    <div class="teacher">Куликов В.А</div>
+                                    <div class="kab">123 каб.</div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><span class="btn-25 btn-primory">2</span></td>
+                            <td>10:10<br>11:30</td>
+                            <td>
+                                <div class="subject">ОС и среды</div>
+                                <div class="d-flex">
+                                    <div class="teacher">Куликов В.А</div>
+                                    <div class="kab">123 каб.</div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><span class="btn-25 btn-primory">3</span></td>
+                            <td>12:15<br>13:50</td>
+                            <td>
+                                <div class="subject">ОС и среды</div>
+                                <div class="d-flex">
+                                    <div class="teacher">Куликов В.А</div>
+                                    <div class="kab">123 каб.</div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+        <!--        <div class="exit-btn">Выйти</div>-->
+    </div>
+    
+    <div class="h65"></div>
+    <div class="sub-header-menu hidden-md-down">
+        <div class="container">
+            <a href="#">Абитуриентам</a>
+            <a href="">Студентам</a>
+            <a href="">Газета</a>
+            <a href="">Карта сайта</a>
+            <a href="timetable.html">Расписание</a>
+            <button><div class="eye-img "></div>Версия для слабовидящих </button>
+        </div>
+    </div>
+    
+    <div class="cover-blur">
+    </div>
+       <div class="container"></div>
+        <div class="container mt-130 borderg h500 rasp-page bg-white">
+           <h3 class="">Расписание занятий</h3>
+           <div class="input-cover borderg">
+               <div class="search-icon"></div><input class=""type="search" placeholder="Номер группы">
+           </div>
+           
+<label class="radio-button radio-button--material">
+  <input type="radio" class="radio-button__input radio-button--material__input" name="r" checked="checked">
+  <div class="radio-button__checkmark radio-button--material__checkmark"></div>
+  Label
+</label>
+<label class="radio-button radio-button--material">
+  <input type="radio" class="radio-button__input radio-button--material__input" name="r">
+  <div class="radio-button__checkmark radio-button--material__checkmark"></div>
+  Label
+</label>
+<label class="radio-button radio-button--material">
+  <input type="radio" class="radio-button__input radio-button--material__input" name="r">
+  <div class="radio-button__checkmark radio-button--material__checkmark"></div>
+  Label
+</label>
+
+        
+           
+        </div>
+        
+
+            
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="other-category">
+        <div class="container">
+            <div class="row">
+                <div class="col-3">
+                     <div class="other-c-logo">М</div>
+                     <span class="hidden-md-down">Министерство <br>образования</span>
+                     
+                </div>
+                <div class="col-3">
+                     <div class="other-c-logo">М</div>
+                     <span class="hidden-md-down">Министерство <br>образования</span>
+                </div>
+                <div class="col-3">
+                     <div class="other-c-logo">М</div>
+                     <span class="hidden-md-down">Министерство <br>образования</span>
+                </div>
+                <div class="col-3">
+                     <div class="other-c-logo">М</div>
+                     <span class="hidden-md-down">Министерство <br>образования</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-primary">
+        <div class="container">
+            <div class="row ft-col">
+                <div class=" col-12 col-sm12 col-md-4 col-lg-3">
+                   <div class="ml-20">
+                       <div class="logo t-shadow">
+                        <div class="name-gt">ГТМАУ</div>
+<!--                        <div class="full-name-gt">ГБПОУ <br> Георгиевский техникум </div>-->
+                    </div>
+                    <p>Разработка © 2017</p>
+                    <p><a href="">IT Департамент</a></p>
+                   </div>
+                    
+                </div>
+                <div class="col-12 col-sm-6  col-md-4 col-lg-6">
+                    <p class="heading">Контакты</p>
+                    <div class="adress">
+                        <div class="location-icon"></div><span>Адрес: </span> Ставропольский край, г.Георгиевск, ул. Калинина, д. 111, <br>ул. Октябрьская, д. 59.
+                    </div>
+                    <div class="phone"> <div class="phone-icon"></div> <span>Телефон приёмной: </span>(87951) 6-17-62</div>
+                    <div class="mail"><div class="mail-icon"></div><span>Эл. почта: </span>geo-teh@mail.ru</div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <p class="heading">Наши страницы в соц. сетях</p>
+                    <div class="social">
+                        <a href=""><div class="vk-icon"></div>Вконтакте</a>
+                        <br>
+                        <a href=""><div class="insta-icon"></div>Instagram</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="s-footer">
+       <div class="hidden-md-up" >ГБПОУ ГТМАУ</div>
+        <div class="hidden-sm-down">ГБПОУ Георгиевский техникум механизации, автоматизации и управления.</div>
+        
+    </div>
+
+
+</body>
+
+
+
+</html>

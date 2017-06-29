@@ -1,22 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     
     
-    // Табы новостей 
-    var tab_btn = document.querySelector("#tab-btn");
-    tab_btn.addEventListener("click", function (e) {
-        var btn = tab_btn.children;
-        var page = document.querySelector("#tab-page").children;
-
-        if (e.target.tagName === "SPAN") {
-            for (var i = 0, len = btn.length; i < len; i++) {
-                btn[i].index = i;
-                btn[i].className = "";
-                page[i].className = "";
-            }
-            e.target.className = "active-tab";
-            page[e.target.index].className = "active";
-        }
-    }, false);
+    
 
     
     // Откритие/закрытие меню разделов сайта
@@ -165,6 +150,37 @@ document.addEventListener('DOMContentLoaded', () => {
         congratulationsReg.classList.add('active');
         regCont.classList.remove('active');
     });
+    // Табы новостей 
+    var tab_btn = document.querySelector("#tab-btn");
+    tab_btn.addEventListener("click", function (e) {
+        var btn = tab_btn.children;
+        var page = document.querySelector("#tab-page").children;
+
+        if (e.target.tagName === "SPAN") {
+            for (var i = 0, len = btn.length; i < len; i++) {
+                btn[i].index = i;
+                btn[i].className = "";
+                page[i].className = "";
+            }
+            e.target.className = "active-tab";
+            page[e.target.index].className = "active";
+        }
+    }, false);
+    
+    
+    
+    
+    
+        
+    
+    
+   
+    
+    
+    
+    
+    
+    
     
     
 });
