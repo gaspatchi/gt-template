@@ -150,6 +150,21 @@ document.addEventListener('DOMContentLoaded', () => {
         congratulationsReg.classList.add('active');
         regCont.classList.remove('active');
     });
+    
+    var exitBtn = document.querySelector(".exit-btn");
+    
+    exitBtn.addEventListener('click', () => {
+        pHeadUser.classList.remove('active');
+        pHeading.classList.add('active');
+        loginCont.classList.add('active');
+        raspCont.classList.remove('active');
+        goLogin.classList.remove('inactive');
+        pPagebtn.classList.add('inactive');
+        avatarPrew.classList.remove('active');  
+    });
+    
+    
+    
     // Табы новостей 
     var tab_btn = document.querySelector("#tab-btn");
     tab_btn.addEventListener("click", function (e) {
