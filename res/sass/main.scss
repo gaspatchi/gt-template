@@ -1797,6 +1797,13 @@ footer{
     margin: 12.5px;
 }
 
+.arrow-down{
+    background: url('data:image/svg+xml;utf8,<svg fill="#000000" height="30" viewBox="0 0 24 24" width="30" xmlns="http://www.w3.org/2000/svg"><path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"/><path d="M0-.75h24v24H0z" fill="none"/></svg>') center no-repeat;
+    width: 30px;
+    height: 30px;
+    margin: -6px 0 -10px 2px;
+}
+
 .tab.current-timetable{
     .bbtn{
         display: flex;
@@ -1806,26 +1813,154 @@ footer{
         padding: 0 25px;
     }
     .date{
-        display: block;
-    padding: 15px 25px;
+        display:flex;
+        align-items: center;
+    padding: 0px 25px;
     margin-bottom: -1px;
     cursor: pointer;
     font-weight: 600;
     border-bottom: 3px transparent solid;
         margin-left: auto;
+        font-size: 17px;
+        .hidden-sm-down{
+            margin-left: 5px;
+        }
     }
+}
+
+.primary-table.rasp {
+    text-align: center;
+    color: $black;
+    table,
+    tbody,
+    tr {
+        width: 100%;
+    }
+    tr {
+        width: 100%;
+    }
+    .p-table-header {
+
+        height: 36px;
+        td {
+            border-left: 1px solid rgba(150, 150, 150, 0.07);
+        }
+        vtd {
+            border-left: 1px solid $borderg;
+        }
+    }
+    .time {
+        width: 120px;
+        max-width: 100px;
+        .d-flex {
+            align-items: center;
+            justify-content: center;
+            padding: 0 15px;
+        }
+    }
+    .teacher {
+        width: 200px;
+    }
+    .class-room {
+        width: 140px;
+    }
+
+    .line-lession {
+        height: 60px;
+        border-bottom: 1px solid $borderg;
+        &:last-child {
+            border: 0;
+        }
+        &:only-child {
+            border: 0
+        }
+        .time {
+            line-height: 18px;
+        }
+        .name-lession {
+            text-align: left;
+            line-height: 18px;
+            padding: 0 15px;
+        word-wrap: break-word;
+        }
+    }
+    .numb {
+        width: 40px;
+        text-align: center;
+        align: center;
+        .cover {
+            margin: 0 15px;
+            line-height: 19.5px;
+            height: 19px;
+            width: 19px;
+            text-align: center;
+            border-radius: 15px;
+            border: 1px solid #072a7c!important;
+            font-weight: 600;
+            box-sizing: content-box;
+            font-size: 13px;
+            background: $primary;
+            color: white;
+        }
+    }
+}
+.mobile-rasp{
+    display: none;
+    color: $black;
+    .p-menu-table{
+        padding: 0 10px;
+        margin-bottom: 0 !important;
+        tbody{
+            border: 0;
+        }
+        tr{
+            color: $black;
+        }
+        tr:last-child{
+            td{
+                border: 0;
+            }
+        }
+    }
+    
+}
+
+.time-icon{
+    background: url('data:image/svg+xml;utf8,<svg fill="#000000" height="18" viewBox="0 0 24 24" width="18" xmlns="http://www.w3.org/2000/svg"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"/><path d="M0 0h24v24H0z" fill="none"/><path d="M12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>') center no-repeat;
+    width: 18px;
+    height: 18px;
+    margin: 0 10px 0 -25px;
+    display: inline-block;
 }
 
 
 
 
 
-
-
-
-
-
 @media (max-width: 990px){
+
+    .primary-table.rasp {
+    .time {
+        width: 70px;
+        .d-flex {
+            padding: 0 15px;
+            .time-icon{
+                display: none;
+            }
+        }
+    }
+    .teacher {
+        width: 140px;
+    }
+    .class-room {
+        width: 80px;
+    }
+    .numb {
+        width: 30px;
+        .cover {
+            margin: 0 10px;}
+    }
+}
     .all-news{
         background: none !important;
         box-shadow: none !important;
@@ -1981,6 +2116,13 @@ footer{
 
 }
 }
+
+
+
+
+
+
+
 @media (max-width: 720px){
     .f-menu-heading{
 
@@ -1994,13 +2136,28 @@ footer{
 }
 }
 @media (max-width: 574px) {
+    .tab.current-timetable #tab-btn {
+    padding: 0 5px;
+}
+    .tab.current-timetable .date {
+        .arrow-down{
+            margin-top: -10px;
+        }
+    padding: 15px 5px;
+
+}
     .primary-table{
         margin-bottom: 10px
     }
     .container.rasp-page{
-         #tab-btn{
+         #tab-btn, {
         span{
             font-size: 15px;}}
+        .date{
+             font-size: 15px;
+            margin-bottom: -6px;
+            
+        }
     h3{
         margin: 0 -7px 25px -7px;
         }
@@ -2092,6 +2249,51 @@ footer{
     }
 }
 
+@media (max-width: 500px){
+    .primary-table.rasp{
+        display: none;
+    }
+    .mobile-rasp{
+        display: block;
+    }
+    .mobile-rasp{.p-menu-table{
+        margin-bottom: 50px;
+    table{
+        width: 100%;
+        tbody{
+        font-size: 16px;
+            td:nth-child(2) {
+                padding: 0 7px;
+        }
+        }
+        .subject {
+            height: 24px;
+            max-width: 190px;
+        }
+        
+        .teacher {
+            padding-top: 2px;
+            height: 24px;
+            font-size: 14px;
+            max-width: 140px;
+        }
+        span {
+        line-height: 23px;
+        height: 23px;
+        width: 23px;
+        font-size: 15px;
+    }
+        
+        
+        .kab {
+            font-size: 14px;
+            padding-top: 4px;
+        }
+    }
+    }}
+
+}
+    
 @media (max-width: 400px) {
     .personal-menu {
         border-left: 0px;
@@ -2107,37 +2309,6 @@ footer{
             padding: 3px 18px !important;
         }
     }
-    .p-header {
-        h6 {
-            font-size: 16px;
-        }
-    }
-    .user-info-min {
-        .user-names{
-            margin: auto;
-        }
-        span {
-            font-weight: 700;
-            color: $primary;
-            font-size: 16px !important;
-        }
-        br{
-            display: none;
-        }
-    }
-    .btn-25{
-    height: 29px;
-    width: 29px;
-        line-height: 28px;
-        font-size: 24px;
-    }
-    .rasp-cont{
-        h5{font-size: 16px !important;}
-    }
-
-    
-
-
     .p-menu-table{
         margin-bottom: 50px;
     table{
@@ -2172,6 +2343,33 @@ footer{
             padding-top: 4px;
         }
     }
+    }
+    .p-header {
+        h6 {
+            font-size: 16px;
+        }
+    }
+    .user-info-min {
+        .user-names{
+            margin: auto;
+        }
+        span {
+            font-weight: 700;
+            color: $primary;
+            font-size: 16px !important;
+        }
+        br{
+            display: none;
+        }
+    }
+    .btn-25{
+    height: 29px;
+    width: 29px;
+        line-height: 28px;
+        font-size: 24px;
+    }
+    .rasp-cont{
+        h5{font-size: 16px !important;}
     }
     
 }
