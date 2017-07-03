@@ -163,6 +163,14 @@ document.addEventListener('DOMContentLoaded', () => {
         avatarPrew.classList.remove('active');  
     });
     
+     var favorBtn = document.querySelector(".favorBtn");
+     var favorContext = document.querySelector(".context-menu");
+    
+    favorBtn.addEventListener('click', () => {
+        favorContext.classList.toggle('active');
+    });
+    
+    
     
     
     // Табы новостей 
