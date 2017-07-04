@@ -1865,7 +1865,41 @@ footer{
     height: 30px;
     margin: 0 5px 0 2px;
 }
+.mail-icon-grey{
+    background: url('data:image/svg+xml;utf8, <svg fill="#ADB0B9" height="18" viewBox="0 0 24 24" width="18" xmlns="http://www.w3.org/2000/svg"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/><path d="M0 0h24v24H0z" fill="none"/></svg>') center no-repeat;
+    margin: 12.5px;
+     width: 20px;
+    height: 20px;
+}
 
+.currnt-name.teacher{
+    justify-content: flex-start;
+    align-items: flex-start;
+    .teacher-photo{
+        flex-basis: 130px;
+        height: 180px;
+        overflow: hidden;
+        margin: 15px;
+        border-radius:5px;
+        background: url(/res/img/teacher-icon.png) no-repeat center;
+        background-size: cover;
+    }
+    h5{
+        font-weight: 700;
+        font-size: 20px;
+        padding: 30px 10px;
+        text-align: left;
+    }
+}
+.teacher-dejat{
+    display: flex;
+    .primary-table{
+        width: 50%;
+        &:last-child{
+            margin-left: 25px;
+        }
+    }
+}
 .tab.current-timetable{
     .bbtn{
         display: flex;
@@ -1909,11 +1943,17 @@ footer{
             z-index: 999;
             width: 100%;
             .date-list{
-        
+
                 background: $white;
                 border: 1px solid $borderg;border-top: 0;
                 border-radius:  0 0 5px 5px;
                 .date-list-item{
+                    span{
+                        display: block;
+                        max-width: 80px;
+                        text-overflow: ellipsis;
+                        display: inline-block;
+                    }
                     padding: 5px 0 5px 10px;
                     &:hover{
             background: rgba(0,0,0,0.04);
@@ -1926,6 +1966,7 @@ footer{
             }
         }
     }
+
     .date.select{
         .d-flex{
             background: $white;
@@ -2057,7 +2098,19 @@ footer{
 
 
 @media (max-width: 990px){
-
+.currnt-name.teacher{
+    justify-content: flex-start;
+    align-items: flex-start;
+   .teacher-photo{
+        flex-basis: 120px;
+       height: 150px;
+        }
+        h5{
+            display: inline-block;
+            font-size: 18px;
+            padding: 30px 5px;
+        }
+}
     .primary-table.rasp {
     .time {
         width: 70px;
@@ -2166,7 +2219,16 @@ footer{
   }
 }
 @media (max-width: 767px){
-    
+    .teacher-dejat{
+    display: flex;
+        flex-wrap: wrap;
+    .primary-table{
+        width: 100%;
+        &:last-child{
+            margin-left: 0;
+        }
+    }
+}
     .current-rasp-header{
         .star-icon{
         margin: 8px 0px 8px 15px;}
@@ -2205,7 +2267,10 @@ footer{
         width: 100%;
         padding: 10px 0;
     }
-    
+    .currnt-name.teacher{
+    justify-content: flex-start;
+    align-items: flex-start;
+}
     }
     .other-category{
     .col-12 {
@@ -2503,6 +2568,11 @@ footer{
         h5{font-size: 16px !important;}
     }
     
+}
+@media (max-width: 350px){
+    #tab-btn.page-teacher span{
+        padding: 13px 7px !important;
+    }
 }
 @media (max-width: 340px){
     .gt-header{
