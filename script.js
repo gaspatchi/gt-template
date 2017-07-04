@@ -163,12 +163,6 @@ document.addEventListener('DOMContentLoaded', () => {
         avatarPrew.classList.remove('active');  
     });
     
-     var favorBtn = document.querySelector(".favorBtn");
-     var favorContext = document.querySelector(".context-menu");
-    
-    favorBtn.addEventListener('click', () => {
-        favorContext.classList.toggle('active');
-    });
     
     
     
@@ -192,6 +186,19 @@ document.addEventListener('DOMContentLoaded', () => {
     
     
     
+     var favorBtn = document.querySelector(".favorBtn");
+     var favorContext = document.querySelector(".context-menu");
+    
+    favorBtn.addEventListener('click', () => {
+        favorContext.classList.toggle('active');
+    });
+    
+    var dateSelector = document.querySelector(".table-date");
+    var dateCover = document.querySelector(".date.cover");
+    
+    dateSelector.addEventListener('click', () => {
+        dateCover.classList.toggle('select');
+    });
     
     
         
