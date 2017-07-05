@@ -1119,6 +1119,7 @@ input:focus ~ label {
     margin-top: -10px;
     cursor: default;
     .news-description{
+        white-space: nowrap;
         cursor: pointer;
        float: right;
         font-weight: 600 !important;
@@ -1135,6 +1136,7 @@ input:focus ~ label {
     }
 }
 .all-n-arrow{
+    
     display:inline-block;
     width: 20px;
     height: 20px;
@@ -1824,12 +1826,14 @@ footer{
     }
     .about-of-name{
         width: 50%;
-        padding: 10px 0;
+        padding: 10px 10px 10px 0;
     }
     .about-line{
+        div:first-child{
+            flex-shrink: 0;
+        }
         margin: 10px;
         display: flex;
-        align-items: center;
         font-size: 14px;
         line-height: 18px;
         span{
@@ -1844,19 +1848,19 @@ footer{
     background: url('data:image/svg+xml;utf8,<svg fill="#ADB0B9" height="25" viewBox="0 0 24 24" width="25" xmlns="http://www.w3.org/2000/svg"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/><path d="M0 0h24v24H0z" fill="none"/></svg>') center no-repeat;
     width: 25px;
     height: 25px;
-    margin: 10px;
+    margin: 5px 10px 10px 10px ;
 }
 .specialty-icon{
     background: url('data:image/svg+xml;utf8,<svg fill="#ADB0B9" height="20" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-6 0h-4V4h4v2z"/></svg>') center no-repeat;
     width: 20px;
     height: 20px;
-    margin: 12.5px;
+    margin: 7px 12.5px 12.5px 12.5px;
 }
 .course-icon{
     background: url('data:image/svg+xml;utf8,<svg fill="#ADB0B9" height="20" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path d="M0 0h24v24H0z" id="a"/></defs><clipPath id="b"><use overflow="visible" xlink:href="#a"/></clipPath><path clip-path="url(#b)" d="M20 7h-4V5c0-.55-.22-1.05-.59-1.41C15.05 3.22 14.55 3 14 3h-4c-1.1 0-2 .9-2 2v2H4c-1.1 0-2 .9-2 2v11c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V9c0-1.1-.9-2-2-2zM10 5h4v2h-4V5zm1 13.5l-1-1 3-3-3-3 1-1 4 4-4 4z" fill="ADB0B9"/></svg>') center no-repeat;
     width: 20px;
     height: 20px;
-    margin: 12.5px;
+    margin: 7px 12.5px 12.5px 12.5px;
 }
 
 .arrow-down{
@@ -1866,11 +1870,63 @@ footer{
     margin: 0 5px 0 2px;
 }
 .mail-icon-grey{
+    
     background: url('data:image/svg+xml;utf8, <svg fill="#ADB0B9" height="18" viewBox="0 0 24 24" width="18" xmlns="http://www.w3.org/2000/svg"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/><path d="M0 0h24v24H0z" fill="none"/></svg>') center no-repeat;
-    margin: 12.5px;
+    margin: 7px 12.5px 12.5px 12.5px;
      width: 20px;
     height: 20px;
 }
+.location-icon{
+    background: url('data:image/svg+xml;utf8,<svg fill="#ADB0B9" height="20" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M15 11V5l-3-3-3 3v2H3v14h18V11h-6zm-8 8H5v-2h2v2zm0-4H5v-2h2v2zm0-4H5V9h2v2zm6 8h-2v-2h2v2zm0-4h-2v-2h2v2zm0-4h-2V9h2v2zm0-4h-2V5h2v2zm6 12h-2v-2h2v2zm0-4h-2v-2h2v2z"/><path d="M0 0h24v24H0z" fill="none"/></svg>') center no-repeat;
+    width: 20px;
+    height: 20px;
+    margin: 7px 12.5px 12.5px 12.5px;
+}
+.layer-icon{
+    background: url('data:image/svg+xml;utf8,<svg fill="#ADB0B9" height="20" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M11.99 18.54l-7.37-5.73L3 14.07l9 7 9-7-1.63-1.27-7.38 5.74zM12 16l7.36-5.73L21 9l-9-7-9 7 1.63 1.27L12 16z"/></svg>') center no-repeat;
+    width: 20px;
+    height: 20px;
+    margin: 7px 12.5px 12.5px 12.5px;
+}
+
+.description-icon{
+    background: url('data:image/svg+xml;utf8,<svg fill="#ADB0B9" height="20" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg>') center no-repeat;
+    width: 20px;
+    height: 20px;
+    margin: 7px 12.5px 12.5px 12.5px;
+}
+
+
+.currnt-name.classroom{
+    justify-content: flex-start;
+    align-items: flex-start;
+    .classroom-photo{
+        flex-basis: 100%;
+        height: 180px;
+        overflow: hidden;
+        margin: 15px;
+        border-radius:5px;
+        background: url(/res/img/teacher-icon.png) no-repeat center;
+        background-size: cover;
+        display: flex;
+
+         border: 1px solid $borderg;
+        flex-direction: column;
+    }
+    h5{
+        font-weight: 700;
+        font-size: 18px;
+        padding: 20px 20px;
+        color: white;
+        background: rgba(0,0,0,0.7);
+        display: inline-block;
+        margin-left: auto;
+        flex-shrink: 1;
+        border-bottom-left-radius: 5px;
+    }
+}
+
+
 
 .currnt-name.teacher{
     justify-content: flex-start;
@@ -2335,6 +2391,10 @@ footer{
 }
 }
 @media (max-width: 574px) {
+    .mt-130{margin-top: 80px;}
+    .cover-blur {
+    width: 100%;
+        height: 100px;}
         .current-rasp-header .favorite{
         margin-right: -5px;
     }
