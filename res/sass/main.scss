@@ -1496,13 +1496,60 @@ footer{
         padding: 10px 15px;
         font-size: 13px;
         }
-
              button{
              margin: auto;
-
     }
     }
     
+}
+
+
+.col-news-all{
+    box-shadow: 0 1px 2px rgba(0,0,0,0.19);
+        border-radius: 5px;
+    color: $black;
+    margin-bottom: 10px;
+    font-weight: 600;
+     padding: 15px;
+    background: $white;
+    display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+    .news-prev{
+        width: 300px;
+        border-radius: 2px;
+    }
+    .d-flex{
+        margin-top: 5px;
+        color: $black;
+        font-size: 14px;
+        order: 999;
+        font-weight: 700;
+    }
+    .category{
+        margin-left:15px;
+        font-size: 12px;
+        border: 1.3px solid $black;
+        border-radius: 15px;
+        padding: 0 13px;
+        line-height: 18px;
+    }
+    .news-head-line{
+        font-weight: 600;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin-top: 10px;
+        hyphens: auto;
+        font-size: 18px;
+    }
+    .news-description{
+        font-weight: 500;
+        font-size: 14px;    
+    }
+    .news-info{
+        padding-left: 20px;
+        width: 100%;
+        }
 }
 
 .cover-blur{
@@ -1511,6 +1558,17 @@ footer{
     background: url(/res/img/cover-blur.jpg) no-repeat center;
     background-size: cover;
     position: absolute;
+}
+.cover-blur.news{
+    position: static;
+    height: auto;
+    h1{
+        color: $white;
+        text-align: center;
+        font-size: 30px;
+        padding: 33px;
+        margin-bottom: 0;
+    }
 }
 .container.rasp-page{
     .bbtn{
@@ -1876,7 +1934,7 @@ footer{
      width: 20px;
     height: 20px;
 }
-.location-icon{
+.location-icon-grey{
     background: url('data:image/svg+xml;utf8,<svg fill="#ADB0B9" height="20" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M15 11V5l-3-3-3 3v2H3v14h18V11h-6zm-8 8H5v-2h2v2zm0-4H5v-2h2v2zm0-4H5V9h2v2zm6 8h-2v-2h2v2zm0-4h-2v-2h2v2zm0-4h-2V9h2v2zm0-4h-2V5h2v2zm6 12h-2v-2h2v2zm0-4h-2v-2h2v2z"/><path d="M0 0h24v24H0z" fill="none"/></svg>') center no-repeat;
     width: 20px;
     height: 20px;
@@ -2208,18 +2266,16 @@ footer{
     margin-right: -15px !important;
 
 }
-    .news-prev{
-        width: 60%;
-        border-radius: 2px;
-    }
-    .news-prew-size{
     
-    }
     .col-news{
         box-shadow: 0 1px 2px rgba(0,0,0,0.19);
         border-radius: 5px;
         background: $white;
         padding: 10px;
+        .news-prev{
+        width: 60%;
+        border-radius: 2px;
+    }
         .d-flex{
             font-size: 12px;
             margin-top: -3px;
@@ -2275,6 +2331,51 @@ footer{
   }
 }
 @media (max-width: 767px){
+    
+.col-news-all{
+        box-shadow: 0 1px 2px rgba(0,0,0,0.19);
+        border-radius: 5px;
+        
+       padding: 10px;
+  .news-prev{
+        width: 60%;
+        
+  }
+        .d-flex{
+            font-weight: 600;
+            font-size: 12px;
+            margin-top: -3px;
+            justify-content: flex-start;
+            color: $grey;
+        }
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        .news-info{
+            padding: 0 0 0 10px;
+            width: 100%;
+            box-shadow: none;
+            
+        }
+        .category{
+        opacity: 0.3;
+            margin-left:-5px;
+            font-size: inherit;
+            border: none;
+    }
+        .news-head-line{
+
+            margin-top: 0px;
+            margin-bottom: 0;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 22px;
+        }
+    .news-description{
+        display: none;
+    }
+        
+    }
     .teacher-dejat{
     display: flex;
         flex-wrap: wrap;
@@ -2391,6 +2492,10 @@ footer{
 }
 }
 @media (max-width: 574px) {
+    .all-news-mobile-padding{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
     .mt-130{margin-top: 80px;}
     .cover-blur {
     width: 100%;
@@ -2398,6 +2503,12 @@ footer{
         .current-rasp-header .favorite{
         margin-right: -5px;
     }
+    .cover-blur.news{
+        h1{font-size: 20px;}
+    width: 100%;
+    height: auto;
+    position: static;
+}
     .tab.current-timetable #tab-btn {
     padding: 0 5px;
 }
@@ -2431,6 +2542,7 @@ footer{
     .all-news{
 
     .news-description{
+        margin: auto !important;
         margin: auto !important;
     }
 }
