@@ -1033,12 +1033,12 @@ input:focus ~ label {
         width: 100%;
         opacity: 0;
         visibility: hidden;
-        position: absolute;
+        position: fixed;
         transition: opacity 0.5s ease-in-out;
 
     }
     .active {
-        position: relative;
+        position: static;
         opacity: 1;
         visibility: visible;
         padding: 30px 0;
@@ -1568,13 +1568,61 @@ footer{
             margin: 10px 0 0 10px;
         }
         button:hover{
-            background: 
+            color: $primary;
+            border: 1px solid $borderb;
+        }
+        button:focus{
+            color: $primary;
+            border: 1px solid $borderb;
+        }button:active{
+            color: $primary;
+            border: 1px solid $borderb;
         }
         button.checked{
             background: $primary;
             color: $white;
             border: 1px solid $borderb;
         }
+    }
+}
+.pagination{
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    >*{
+        color: $white;
+        padding: 2px;
+        min-width: 30px;
+        text-align: center;
+        border: 1px solid $borderb;
+        border-right: 0;
+        background: $primary;
+        &:last-child{
+            border-right: 1px solid $borderb;
+        }
+    }
+    span{
+        background: #17357b;
+    }
+    a:hover{
+        background: $searchinblue;
+        
+    }
+    a:active{
+        background: $searchinblue;
+        
+    }
+    a:focus{
+        background: $searchinblue;
+        
+    }
+    .prev{
+        svg{margin-bottom: -7px;}
+        border-radius:  15px 0 0 15px;
+    }
+    .next{
+        svg{margin-bottom: -7px;}
+        border-radius: 0 15px 15px 0;
     }
 }
 .vk-icon-black{
