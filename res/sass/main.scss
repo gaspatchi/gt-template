@@ -558,7 +558,7 @@ button:hover{outline: none;}
 .full-menu { -ms-overflow-style: none; }
 .full-menu { overflow: -moz-scrollbars-none; }
 
-.full-menu-opend {
+.full-menu.opend {
     visibility: visible;
     opacity: 1;
 }

@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
     var trigger = document.getElementById('spinner-form2');
     var headBorder = document.getElementById('fadeborder');
     trigger.addEventListener('click', () => {
-        element.classList.toggle('full-menu-opend'),
+        element.classList.toggle('opend'),
             headBorder.classList.toggle('head-border');
     });
 
