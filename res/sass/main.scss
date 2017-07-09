@@ -644,7 +644,7 @@ input:focus ~ label {
 }
 
 .select-box-wrapper{
-   margin: 0 auto;
+   margin: 0 auto !important;
     display: flex;
     flex-wrap: nowrap;
     .btn-25{margin-left: 10px;}
