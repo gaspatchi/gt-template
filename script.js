@@ -1,9 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     
     
-    
 
-    
     // Откритие/закрытие меню разделов сайта
     var element = document.getElementById('fmenu');
     var trigger = document.getElementById('spinner-form2');
@@ -13,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
             headBorder.classList.toggle('head-border');
     });
 
-     // Выпадающее меню в меню разделов сайта 
+    // Выпадающее меню в меню разделов сайта 
     var dropdown = document.querySelectorAll('.dropdown');
     var dropdownArray = Array.prototype.slice.call(dropdown, 0);
     dropdownArray.forEach(function (el) {
@@ -45,7 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
     Element.prototype.hasClass = function (className) {
         return this.className && new RegExp("(^|\\s)" + className + "(\\s|$)").test(this.className);
     };
-    
+
     //Активация поиска 
     var topSearch = document.getElementById('top-search-f');
     var searchOfside = document.getElementById('ofside-search');
@@ -60,7 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
         topSearch.classList.remove("active-search-cover");
         searchResultes.classList.remove("active-search-resultes");
     });
-    
+
     //Активация мобильного поиска
     var mobileSearch = document.getElementById('mobile-search');
     var tmSearch = document.getElementsByClassName('tmsearch');
@@ -97,13 +95,13 @@ document.addEventListener('DOMContentLoaded', () => {
     goLogin.addEventListener('click', () => {
         personalMenu.classList.add('opend');
     });
-    
-    
+
+
     // кнопка закрытия бокового меню 
     pClose.addEventListener('click', () => {
         personalMenu.classList.remove('opend');
     });
-    
+
     var enterTo = document.getElementById("enter-to");
     var pHeadUser = document.querySelector(".user-info-min");
     var pHeading = document.querySelector(".pheding");
@@ -111,8 +109,8 @@ document.addEventListener('DOMContentLoaded', () => {
     var loginCont = document.querySelector(".login-cont");
     var raspCont = document.querySelector(".rasp-cont");
     var pPagebtn = document.querySelector("#personalpage");
-    var avatarPrew  = document.querySelector(".avatar");
-    
+    var avatarPrew = document.querySelector(".avatar");
+
     enterTo.addEventListener('click', () => {
         pHeadUser.classList.add('active');
         pHeading.classList.remove('active');
@@ -120,39 +118,39 @@ document.addEventListener('DOMContentLoaded', () => {
         raspCont.classList.add('active');
         goLogin.classList.add('inactive');
         pPagebtn.classList.remove('inactive');
-        avatarPrew.classList.add('active');  
+        avatarPrew.classList.add('active');
     });
-    
-    var regBtn  = document.querySelector("#registration");
-    var regCont  = document.querySelector(".registration");
-    
+
+    var regBtn = document.querySelector("#registration");
+    var regCont = document.querySelector(".registration");
+
     regBtn.addEventListener('click', () => {
         loginInputs.classList.remove('active');
         regCont.classList.add('active');
     });
-    
-    var backToEnter  = document.querySelector("#back-to-enter");
-    var backToEnter2  = document.querySelector("#back-to-enter2");
+
+    var backToEnter = document.querySelector("#back-to-enter");
+    var backToEnter2 = document.querySelector("#back-to-enter2");
     var congratulationsReg = document.querySelector(".congratulations");
     var afterReg = document.querySelector("#next-reg-step");
 
-    
+
     backToEnter.addEventListener('click', () => {
         loginInputs.classList.add('active');
         regCont.classList.remove('active');
     });
-     backToEnter2.addEventListener('click', () => {
+    backToEnter2.addEventListener('click', () => {
         loginInputs.classList.add('active');
         congratulationsReg.classList.remove('active');
     });
-    
+
     afterReg.addEventListener('click', () => {
         congratulationsReg.classList.add('active');
         regCont.classList.remove('active');
     });
-    
+
     var exitBtn = document.querySelector(".exit-btn");
-    
+
     exitBtn.addEventListener('click', () => {
         pHeadUser.classList.remove('active');
         pHeading.classList.add('active');
@@ -160,13 +158,19 @@ document.addEventListener('DOMContentLoaded', () => {
         raspCont.classList.remove('active');
         goLogin.classList.remove('inactive');
         pPagebtn.classList.add('inactive');
-        avatarPrew.classList.remove('active');  
+        avatarPrew.classList.remove('active');
     });
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
+
+
+
     // Табы новостей 
     var tab_btn = document.querySelector("#tab-btn");
     tab_btn.addEventListener("click", function (e) {
@@ -183,34 +187,73 @@ document.addEventListener('DOMContentLoaded', () => {
             page[e.target.index].className = "active";
         }
     }, false);
-    
-    
-    
-     var favorBtn = document.querySelector(".favorBtn");
-     var favorContext = document.querySelector(".context-menu");
-    
+
+
+
+    var favorBtn = document.querySelector(".favorBtn");
+    var favorContext = document.querySelector(".context-menu");
+
     favorBtn.addEventListener('click', () => {
         favorContext.classList.toggle('active');
     });
-    
+
     var dateSelector = document.querySelector(".table-date");
     var dateCover = document.querySelector(".date.cover");
-    
+
     dateSelector.addEventListener('click', () => {
         dateCover.classList.toggle('select');
     });
-    
-    
-        
-    
-    
-   
-    
-    
-    
-    
-    
-    
-    
-    
+
 });
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    
+    
+    var editIcon = document.querySelector(".edit-icon");
+    var editInput = document.querySelector(".edit-input");
+
+    editIcon.addEventListener('click', () => {
+        editIcon.classList.toggle('edit');
+        editInput.readOnly = false;
+        editInput.value = '';
+        editInput.focus();
+    });
+
+
+    var newPassword = document.querySelector(".new-password");
+    var oldPass = document.querySelector(".old-password");
+    var writePass = document.querySelector(".write-new-password");
+    var successPass = document.querySelector(".success-password");
+    var goToOldPass = document.querySelector(".new-password button");
+    var goToWritePass = document.querySelector(".old-password button");
+    var goToSuccess = document.querySelector(".write-new-password button");
+    var OldPassInput = document.querySelector(".old-password input");
+    var WritePassInput = document.querySelector(".write-new-password input");
+
+    goToOldPass.addEventListener('click', () => {
+        newPassword.classList.remove('show');
+        oldPass.classList.add('show');
+        OldPassInput.focus();
+    });
+
+    goToWritePass.addEventListener('click', () => {
+        oldPass.classList.remove('show');
+        writePass.classList.add('show');
+        WritePassInput.focus();
+    });
+    goToSuccess.addEventListener('click', () => {
+        writePass.classList.remove('show');
+        successPass.classList.add('show');
+    });
+
+    var subscriptionCheckbox = document.querySelector(".subscription-checkbox");
+    var subCheck = document.querySelector("#sub-check");
+    subCheck.addEventListener('click', () => {
+        subCheck.classList.toggle('subscription-checkbox');
+        subCheck.classList.toggle('subscription-ok');
+    });
+});
+
+

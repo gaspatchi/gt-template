@@ -336,221 +336,144 @@
     </div>
     <div class="cover-blur">
     </div>
-    <div class="container"></div>
-    <div class="container mt-130 borderg rasp-page bg-white">
-        <h3 class="">Расписание занятий</h3>
-        <div class="input-cover borderg">
-            <div class="search-icon"></div><input class="" type="search" placeholder="Номер группы">
-        </div>
+    <div class="container mt-130 borderg rasp-page bg-white account-settings">
+        <div class="user-info">
+            <div class="avatar active img-size-40">
+                <div class="profile-img">
+                    <div class="add-pofile-img">
+                        <div class="add-img-icon"></div>
 
-        <div class="current-rasp-header bbtn">
-
-            <div class="col-4">
-                <a href="schedule.html" class="back-to-list-timetable">
-                    <div class="back-icon"></div> Назад
-                </a>
-            </div>
-            <div class="col-4 currnet-name">
-                Группа
-            </div>
-            <div class="col-4">
-                <div class="favorite">
-                    <div class="d-flex favorBtn">
-                        <div class="star-icon checked"></div>
-                        <div class="hidden-sm-down">В избранном
-                        </div>
-                    </div>
-
-
-                    <div class="context-menu">
-                        <div class="context-arrow"></div>
-                        <div class="lists">
-                            <div class="list-item">
-                                Sms
-                                <div class="done-icon"></div>
-                            </div>
-                            <div class="list-item">
-                                Email
-                                <div class="done-icon"></div>
-                            </div>
-                            <div class="list-item bttn">
-                                Избранное
-                                <div class="done-icon"></div>
-                            </div>
-                        </div>
                     </div>
                 </div>
+            </div>
+            <div class="user-names">
+                <span class="firstname">Александр</span><br>
+                <span class="lastname">Зеленский</span>
             </div>
         </div>
-
-        <div class="primary-table d-flex">
-            <div class="currnt-name">
-                <h5>Группа 312</h5>
-            </div>
-            <div class="about-of-name">
-                <div class="about-line">
-                    <div class="teaher-icon"></div>
-                    <div class="name-of-line">
-                        <span>Классный руговодитель:</span><br> Куликов Виталий Олегович
-                    </div>
-                </div>
-                <div class="about-line">
-                    <div class="specialty-icon"></div>
-                    <div class="name-of-line">
-                        <span>Специальность:</span><br> Программирование в компьютерных системах
-                    </div>
-                </div>
-                <div class="about-line">
-                    <div class="course-icon"></div>
-                    <div class="name-of-line">
-                        <span>Курс:</span><br> Первый
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
         <div class="tab current-timetable">
             <div class="bbtn bg-white">
                 <header id="tab-btn">
-                    <span class="active-tab">Занятия</span>
+                    <span class="active-tab">Личные данные</span>
+                    <span>Подписки</span>
+
 
                 </header>
-                <div class="date cover">
-                    <div class="d-flex table-date">25.05.17
-                        <div class="hidden-sm-down">Среда</div>
-                        <div class="arrow-down">
-
-                        </div>
-                    </div>
-
-                    <div class="date-selector">
-                        <div class="date-list">
-                            <div class="date-list-item">26.05.17 <span class="hidden-sm-down">чт</span></div>
-                            <div class="date-list-item">28.05.17 <span class="hidden-sm-down">пт</span></div>
-                            <div class="date-list-item">26.05.17 <span class="hidden-sm-down">сб</span></div>
-                        </div>
-                    </div>
-                </div>
             </div>
             <section id="tab-page">
                 <div class="active">
-                    <div class="primary-table rasp">
-                        <table>
-                            <tbody>
-                                <tr class="p-table-header">
-                                    <td class="numb">№</td>
-                                    <td class="time">Время</td>
-                                    <td class="name-lession">
-                                        Предмет
-                                    </td>
-                                    <td class="teacher">Преподаватель</td>
-                                    <td class="class-room">
+                    <div class="two-primory-tables-inline">
+                        <div class="primary-table">
+                            <div class="p-table-header">Имя и фамилия</div>
+                            <div class="table-cont">
+                                <h6>Имя:</h6>
+                                <input class="edit-input" type="text"  value="Александр" readonly>
+                                <div class="edit-icon"></div>
+                            </div>
+                            <div class="table-cont">
+                                <h6>Фамилия:</h6>
+                                <input type="text"  value="Зеленский" readonly>
+                                <div class="edit-icon"></div>
+                            </div>
+                        </div>
 
-                                        <div class="hidden-lg-up">Каб.</div>
-                                        <div class="hidden-md-down">Кабиент</div>
 
-                                    </td>
-                                </tr>
-                                <tr class=line-lession>
-                                    <td class="numb">
-                                        <div class="cover"> 1</div>
-                                    </td>
-                                    <td class="time">
-                                        <div class="d-flex">
-                                            <div class="time-icon"></div> 8:30<br> 9:55</td>
-                                    </div>
+                        <div class="primary-table">
+                            <div class="p-table-header">Контакты</div>
+                            <div class="table-cont">
+                                <h6>Email:</h6>
+                                <input type="text"  value="example@mail.com" readonly>
+                                <div class="edit-icon"></div>
+                            </div>
+                            <div class="table-cont">
+                                <h6>Телефон:</h6>
+                                <input type="text"  value="+7 (999) 14-88-000" readonly>
+                                <div class="edit-icon"></div>
+                            </div>
+                        </div>
 
-                                    <td class="name-lession">
-                                        Элементы высшей математики
-                                    </td>
-                                    <td class="teacher">Дядюк.М.Н.</td>
-                                    <td class="class-room">123</td>
-                                </tr>
-                                <tr class=line-lession>
-                                    <td class="numb">
-                                        <div class="cover"> 2</div>
-                                    </td>
-                                    <td class="time">
-                                        <div class="d-flex">
-                                            <div class="time-icon"></div> 8:30<br> 9:55</td>
-                                    </div>
-
-                                    <td class="name-lession">
-                                        ОС и среды
-                                    </td>
-                                    <td class="teacher">Базык.Е.В.</td>
-                                    <td class="class-room">123</td>
-                                </tr>
-                                <tr class=line-lession>
-                                    <td class="numb">
-                                        <div class="cover"> 3</div>
-                                    </td>
-                                    <td class="time">
-                                        <div class="d-flex">
-                                            <div class="time-icon"></div> 8:30<br> 9:55</td>
-                                    </div>
-
-                                    <td class="name-lession">
-                                        Основы программирования
-                                    </td>
-                                    <td class="teacher">Куликов В.А.</td>
-                                    <td class="class-room">123</td>
-                                </tr>
-                            </tbody>
-                        </table>
                     </div>
+                    <div class="two-primory-tables-inline">
+                        <div class="primary-table">
+                            <div class="p-table-header">Изменить пароль</div>
+                            <div class="table-cont new-password show">
+                                <p>Придумайте длинный пароль из букв и цифр, который вам будет легко запомнить, а другим - сложно угадать.</p>
+                                <button class="btn-40 btn-primory shadow new-pass">Новый пароль</button>
+                            </div>
+                            <div class="table-cont old-password">
+                                <h6>Старый пароль:</h6>
+                                <input type="text">
+                                <button class="btn-40 btn-primory shadow new-pass">Далее</button>
+                            </div>
+                            <div class="table-cont write-new-password">
+                                <h6>Новый пароль:</h6>
+                                <input type="text">
+                                <button class="btn-40 btn-primory shadow new-pass">Далее</button>
+                            </div>
+                            <div class="table-cont success-password">
+                                <p>Поздравляем, новый пароль успешно создан.</p>
+                            </div>
+                        </div>
 
-                    <div class="primary-table mobile-rasp">
-                        <div class="p-menu-table">
-                            <table>
-                                <tbody>
-                                    <tr>
-                                        <td><span class="btn-25 btn-primory">1</span></td>
-                                        <td>8:30<br>9:55</td>
-                                        <td>
-                                            <div class="subject">Русский язык</div>
-                                            <div class="d-flex">
-                                                <div class="teacher">Куликов В.А</div>
-                                                <div class="kab">123 каб.</div>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td><span class="btn-25 btn-primory">2</span></td>
-                                        <td>10:10<br>11:30</td>
-                                        <td>
-                                            <div class="subject">ОС и среды</div>
-                                            <div class="d-flex">
-                                                <div class="teacher">Куликов В.А</div>
-                                                <div class="kab">123 каб.</div>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td><span class="btn-25 btn-primory">3</span></td>
-                                        <td>12:15<br>13:50</td>
-                                        <td>
-                                            <div class="subject">ОС и среды</div>
-                                            <div class="d-flex">
-                                                <div class="teacher">Куликов В.А</div>
-                                                <div class="kab">123 каб.</div>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-
-
+                    </div>
+                </div>
+                <div>
+                    <div class="primary-table">
+                        <div class="p-table-header">Email подписки</div>
+                        <div class="table-cont">
+                            <h6>Группы:</h6>
+                            <a href="group-schedule.html" class="btn">321</a>
+                            <a href="#" class="btn">321</a>
+                            <a href="#" class="btn">321</a>
+                            
+                        </div>
+                        <div class="table-cont">
+                            <h6>Преподаватели:</h6>
+                            <a href="teacher-schedule.html" class="btn">Куликов В.А</a>
+                        
                         </div>
                     </div>
-
-
-
-
-
+                    <div class="primary-table">
+                        <div class="p-table-header">Sms подписки</div>
+                        <div class="table-cont">
+                            <h6>Группы:</h6>
+                        
+                        </div>
+                        <div class="table-cont">
+                            <h6>Преподаватели:</h6>
+                            
+                            
+                        </div>
+                    </div>
+                    <div class="primary-table">
+                        <div class="p-table-header">Способы получения</div>
+                        <div class="table-cont">
+                            <h6><span class="hidden-xs-down">Получать на </span>Email</h6>
+                            <h6 class="ml-auto">Бесплатно</h6>
+                            <div class="subscription-checkbox" id="sub-check"></div>
+                        </div>
+                        <div class="table-cont">
+                            <h6><span class="hidden-xs-down">Получать по </span>sms</h6>
+                            <h6 class="ml-auto">Номер не добавлен</h6>
+                            <div class="subscription-err" id="sub-check"></div>
+                        </div>
+                    </div>
+                    <div class="primary-table balance">
+                        <div class="p-table-header">Финансы</div>
+                        <div class="table-cont">
+                            <div class="balance-cont">
+                                <p>Баланс</p>
+                                <div class="cureent-balance">120 <span>р.</span></div>
+                                <button class="pay-in btn-40 btn-primory shadow">Пополнить</button>
+                            </div>
+                            <div class="balance-details">
+                                <h6>Всего отпрвлено смс: <span>0</span></h6>
+                                <h6>Стоимость рассылки: <span>0</span></h6>
+                                <h6>Расходы: <span>0 руб</span></h6>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-
             </section>
         </div>
     </div>
