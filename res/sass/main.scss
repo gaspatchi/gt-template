@@ -2578,7 +2578,79 @@ footer{
         
     }
 }
-
+.feedback-cont{
+    border: 1px solid $borderg;
+    border-radius: 7px;
+    display: flex;
+    overflow: hidden;
+    .feedback-info{
+        display: flex;
+        flex-direction: column;
+        padding-top: 20px;
+        background: $background;
+        input{
+            border: 1px solid $borderg;
+            border-radius: 15px;
+            margin: 10px 15px 0 15px;
+            width: 200px;
+            padding: 4px 20px;
+            font-size: 14px;
+            &::placeholder{
+                font-size: 14px;
+            }
+            &:focus::-webkit-input-placeholder {color: transparent};
+        }
+    }
+    textarea {
+        padding: 20px 30px;
+        height: 215px;
+        width: 100%;
+        border: 0;
+        border-left: 1px solid $borderg;
+        resize: none;
+        font-size: 14px;
+        &::placeholder{
+                font-size: 14px;
+            color: $black;
+            }
+    }
+    
+    textarea {
+        -ms-overflow-style: none;
+    }
+    
+    textarea {
+        overflow: -moz-scrollbars-none;
+    }
+    
+    textarea::-webkit-scrollbar {
+        width: 4px;
+    }
+    
+    textarea::-webkit-scrollbar-track {
+        background: rgba(120, 120, 120, 0.05);
+        border-radius: 0 0 5px 5px;
+    }
+    
+    textarea::-webkit-scrollbar-thumb {
+        background: rgba(120, 120, 120, 0.1);
+        border-radius: 0 0 5px 5px;
+    }
+}
+.after-feedback{
+    margin-top: 20px;
+    display: flex;
+    color: $t-grey;
+    justify-content: space-between;
+    font-size: 14px;
+    .feedback-stat{
+        padding-right: 10px;
+    }
+    span{
+        text-decoration: underline;
+    }
+    
+}
 
 @media (max-width: 990px){
     .new-password{
@@ -2902,6 +2974,22 @@ footer{
 }
 }
 @media (max-width: 574px) {
+    .feedback-cont {
+        flex-direction: column;
+        .feedback-info {
+            padding-bottom: 30px;
+            flex-direction: row;
+            flex-wrap: wrap;
+            input {
+                flex-basis: 1;
+                width: 100%;
+            }
+        }
+        textarea {
+            border: 0;
+            border-top: 1px solid $borderg;
+        }
+    }
     .balance-cont{
         width: 100% !important;
     }
