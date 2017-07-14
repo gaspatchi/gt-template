@@ -88,7 +88,7 @@
                     <div class="hidden-md-up m-search" id="mobile-search"></div>
                     <!-- активация мобильного поиска -->
 
-                    <a class="btn-40 button btn-white shadow inactive" id="personalpage">
+                    <a href="account-settings.html" class="btn-40 button btn-white shadow inactive" id="personalpage">
                         <div class="hidden-md-up">ЛК</div>
                         <div class="hidden-sm-down">Личный кабинет</div>
                     </a>
@@ -367,12 +367,12 @@
                             <div class="p-table-header">Имя и фамилия</div>
                             <div class="table-cont">
                                 <h6>Имя:</h6>
-                                <input class="edit-input" type="text"  value="Александр" readonly>
+                                <input class="edit-input" type="text" value="Александр" readonly>
                                 <div class="edit-icon"></div>
                             </div>
                             <div class="table-cont">
                                 <h6>Фамилия:</h6>
-                                <input type="text"  value="Зеленский" readonly>
+                                <input type="text" value="Зеленский" readonly>
                                 <div class="edit-icon"></div>
                             </div>
                         </div>
@@ -382,12 +382,12 @@
                             <div class="p-table-header">Контакты</div>
                             <div class="table-cont">
                                 <h6>Email:</h6>
-                                <input type="text"  value="example@mail.com" readonly>
+                                <input type="text" value="example@mail.com" readonly>
                                 <div class="edit-icon"></div>
                             </div>
                             <div class="table-cont">
                                 <h6>Телефон:</h6>
-                                <input type="text"  value="+7 (999) 14-88-000" readonly>
+                                <input type="text" value="+7 (999) 14-88-000" readonly>
                                 <div class="edit-icon"></div>
                             </div>
                         </div>
@@ -401,13 +401,13 @@
                                 <button class="btn-40 btn-primory shadow new-pass">Новый пароль</button>
                             </div>
                             <div class="table-cont old-password">
-                                <h6>Старый пароль:</h6>
-                                <input type="text">
+                                <h6 class="hidden-md-down">Старый пароль:</h6>
+                                <input type="password" placeholder="Старый пароль">
                                 <button class="btn-40 btn-primory shadow new-pass">Далее</button>
                             </div>
                             <div class="table-cont write-new-password">
-                                <h6>Новый пароль:</h6>
-                                <input type="text">
+                                <h6 class="hidden-md-down">Новый пароль:</h6>
+                                <input type="password" placeholder=" Новый пароль">
                                 <button class="btn-40 btn-primory shadow new-pass">Далее</button>
                             </div>
                             <div class="table-cont success-password">
@@ -425,54 +425,63 @@
                             <a href="group-schedule.html" class="btn">321</a>
                             <a href="#" class="btn">321</a>
                             <a href="#" class="btn">321</a>
-                            
+
                         </div>
                         <div class="table-cont">
                             <h6>Преподаватели:</h6>
                             <a href="teacher-schedule.html" class="btn">Куликов В.А</a>
-                        
+
                         </div>
                     </div>
                     <div class="primary-table">
                         <div class="p-table-header">Sms подписки</div>
                         <div class="table-cont">
                             <h6>Группы:</h6>
-                        
+
                         </div>
                         <div class="table-cont">
                             <h6>Преподаватели:</h6>
-                            
-                            
+
+
                         </div>
                     </div>
-                    <div class="primary-table">
-                        <div class="p-table-header">Способы получения</div>
-                        <div class="table-cont">
-                            <h6><span class="hidden-xs-down">Получать на </span>Email</h6>
-                            <h6 class="ml-auto">Бесплатно</h6>
-                            <div class="subscription-checkbox" id="sub-check"></div>
-                        </div>
-                        <div class="table-cont">
-                            <h6><span class="hidden-xs-down">Получать по </span>sms</h6>
-                            <h6 class="ml-auto">Номер не добавлен</h6>
-                            <div class="subscription-err" id="sub-check"></div>
-                        </div>
-                    </div>
-                    <div class="primary-table balance">
-                        <div class="p-table-header">Финансы</div>
-                        <div class="table-cont">
-                            <div class="balance-cont">
-                                <p>Баланс</p>
-                                <div class="cureent-balance">120 <span>р.</span></div>
-                                <button class="pay-in btn-40 btn-primory shadow">Пополнить</button>
+
+
+                    <div class="two-primory-tables-inline">
+
+                        <div class="primary-table">
+                            <div class="p-table-header">Способы получения</div>
+                            <div class="table-cont">
+                                <h6><span class="hidden-md-down">Получать на </span>Email</h6>
+                                <h6 class="ml-auto">Бесплатно</h6>
+                                <div class="subscription-checkbox" id="sub-check"></div>
                             </div>
-                            <div class="balance-details">
-                                <h6>Всего отпрвлено смс: <span>0</span></h6>
-                                <h6>Стоимость рассылки: <span>0</span></h6>
-                                <h6>Расходы: <span>0 руб</span></h6>
+                            <div class="table-cont">
+                                <h6><span class="hidden-md-down">Получать по </span>sms</h6>
+                                <h6 class="ml-auto">Номер не добавлен</h6>
+                                <div class="subscription-err" id="sub-check"></div>
                             </div>
                         </div>
+                        <div class="primary-table balance">
+                            <div class="p-table-header">Финансы</div>
+                            <div class="table-cont">
+                                <div class="balance-cont">
+                                    <p>Баланс</p>
+                                    <div class="cureent-balance">120 <span>р.</span></div>
+                                    <button class="pay-in btn-40 btn-primory shadow">Пополнить</button>
+                                </div>
+                                <div class="balance-details">
+                                    <h6>Всего отпрвлено смс: <span>0</span></h6>
+                                    <h6>Стоимость рассылки: <span>0</span></h6>
+                                    <h6>Расходы: <span>0 руб</span></h6>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+
+
+
+
                 </div>
             </section>
         </div>

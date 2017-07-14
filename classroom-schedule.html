@@ -87,7 +87,7 @@
 
                     <div class="hidden-md-up m-search" id="mobile-search"></div> <!-- активация мобильного поиска -->
 
-                    <a class="btn-40 button btn-white shadow inactive" id="personalpage">
+                    <a href="account-settings.html" class="btn-40 button btn-white shadow inactive" id="personalpage">
                         <div class="hidden-md-up" >ЛК</div>
                         <div class="hidden-sm-down">Личный кабинет</div>
                     </a>
@@ -340,8 +340,62 @@
     <div class="container"></div>
     <div class="container mt-130 borderg rasp-page bg-white">
         <h3 class="">Расписание занятий</h3>
-        <div class="input-cover borderg">
-            <div class="search-icon"></div><input class="" type="search" placeholder="Номер группы">
+        <div class="rasp-search-container">
+            <div class="input-cover borderg">
+                <div class="search-icon"></div><input class="rasp-search-input" type="search" placeholder="Номер группы">
+            </div>
+            <div class="search-setting">
+                <div class="radio-select">
+                    <label class="r-button">
+                        <input type="radio" name="s" checked="checked">
+                        <div class="checkmark"></div>
+                        <span>Группа</span> 
+                    </label>
+                    <label class="r-button">
+                        <input type="radio" name="s">
+                        <div class="checkmark"></div>
+                        <span>
+                        <div class="hidden-lg-up">Препод.</div>
+                        <div class="hidden-md-down">Преподаватель</div> 
+                        </span>
+                        
+                        
+                    </label>
+                    <label class="r-button">
+                        <input type="radio" name="s">
+                        <div class="checkmark"></div>
+                        <span>
+                        <div class="hidden-lg-up">Каб.</div>
+                        <div class="hidden-md-down">Кабинет</div> 
+                        </span>
+                    </label>
+                </div>
+
+
+                <div class="rasp-results">
+                    <a href="#" class="rasp-result">
+                        <h6>311 группа</h6>
+                        <span>Электрификация и автоматизация сельского хозяйства</span>
+                    </a>
+                    <a href="#" class="rasp-result">
+                        <h6>321 группа</h6>
+                        <span>Механизация сельского хозяйства</span>
+                    </a>
+                    <a href="#" class="rasp-result">
+                        <h6>341 группа</h6>
+                        <span>Право и организация социального обеспечения</span>
+                    </a>
+                    <a href="#" class="rasp-result">
+                        <h6>344 группа</h6>
+                        <span>Экономика и бухгалтерский учет</span>
+                    </a>
+
+                </div>
+
+
+            </div>
+        </div>
+        <div class="rasp-search-offside">
         </div>
         
         <div class="current-rasp-header bbtn">

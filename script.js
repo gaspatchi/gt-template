@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     
 
-    // Откритие/закрытие меню разделов сайта
+    // ĐŃĐşŃĐ¸ŃĐ¸Đľ/ĐˇĐ°ĐşŃŃŃĐ¸Đľ ĐźĐľĐ˝Ń ŃĐ°ĐˇĐ´ĐľĐťĐžĐ˛ ŃĐ°ĐšŃĐ°
     var element = document.getElementById('fmenu');
     var trigger = document.getElementById('spinner-form2');
     var headBorder = document.getElementById('fadeborder');
@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
             headBorder.classList.toggle('head-border');
     });
 
-    // Выпадающее меню в меню разделов сайта 
+    // ĐŃĐżĐ°Đ´Đ°ŃŃĐľĐľ ĐźĐľĐ˝Ń Đ˛ ĐźĐľĐ˝Ń ŃĐ°ĐˇĐ´ĐľĐťĐžĐ˛ ŃĐ°ĐšŃĐ° 
     var dropdown = document.querySelectorAll('.dropdown');
     var dropdownArray = Array.prototype.slice.call(dropdown, 0);
     dropdownArray.forEach(function (el) {
@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
         return this.className && new RegExp("(^|\\s)" + className + "(\\s|$)").test(this.className);
     };
 
-    //Активация поиска 
+    //ĐĐşŃĐ¸Đ˛Đ°ŃĐ¸Ń ĐżĐžĐ¸ŃĐşĐ° 
     var topSearch = document.getElementById('top-search-f');
     var searchOfside = document.getElementById('ofside-search');
     var searchResultes = document.getElementById('search-resultes');
@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
         searchResultes.classList.remove("active-search-resultes");
     });
 
-    //Активация мобильного поиска
+    //ĐĐşŃĐ¸Đ˛Đ°ŃĐ¸Ń ĐźĐžĐąĐ¸ĐťŃĐ˝ĐžĐłĐž ĐżĐžĐ¸ŃĐşĐ°
     var mobileSearch = document.getElementById('mobile-search');
     var tmSearch = document.getElementsByClassName('tmsearch');
     var mobileSearchclose = document.getElementById('mobile-tcs');
@@ -83,7 +83,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 
-    // открытие бокового меню 
+    // ĐžŃĐşŃŃŃĐ¸Đľ ĐąĐžĐşĐžĐ˛ĐžĐłĐž ĐźĐľĐ˝Ń 
     var avatar = document.getElementById('p-m-o');
     var goLogin = document.getElementById('go-login');
     var personalMenu = document.getElementById('personal-menu');
@@ -97,7 +97,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 
-    // кнопка закрытия бокового меню 
+    // ĐşĐ˝ĐžĐżĐşĐ° ĐˇĐ°ĐşŃŃŃĐ¸Ń ĐąĐžĐşĐžĐ˛ĐžĐłĐž ĐźĐľĐ˝Ń 
     pClose.addEventListener('click', () => {
         personalMenu.classList.remove('opend');
     });
@@ -160,6 +160,8 @@ document.addEventListener('DOMContentLoaded', () => {
         pPagebtn.classList.add('inactive');
         avatarPrew.classList.remove('active');
     });
+    
+    
 
 
 
@@ -170,8 +172,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-
-    // Табы новостей 
+    // Ð¢Ð°Ð±Ñ‹ Ð½Ð¾Ð²Ð¾ÑÑ‚ÐµÐ¹ 
     var tab_btn = document.querySelector("#tab-btn");
     tab_btn.addEventListener("click", function (e) {
         var btn = tab_btn.children;
@@ -204,6 +205,34 @@ document.addEventListener('DOMContentLoaded', () => {
         dateCover.classList.toggle('select');
     });
 
+});
+
+
+
+
+
+
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    var raspSearch = document.querySelector(".rasp-search-container");
+    var raspSearchInput = document.querySelector(".rasp-search-input");
+    var raspOffside = document.querySelector(".rasp-search-offside");
+    
+    raspSearchInput.addEventListener('click', () => {
+        raspSearch.classList.add('active');
+        raspOffside.classList.add('active');
+        
+    });
+    
+    raspOffside.addEventListener('click', () => {
+        raspSearch.classList.remove('active');
+        raspOffside.classList.remove('active');
+        
+    });
 });
 
 
@@ -255,5 +284,4 @@ document.addEventListener('DOMContentLoaded', () => {
         subCheck.classList.toggle('subscription-ok');
     });
 });
-
 
