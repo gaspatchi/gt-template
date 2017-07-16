@@ -16,14 +16,38 @@
 </head>
 
 <body>
-   
-   <!-- Шапка -->
+    <nav class="visually-impaired-mode">
+        <div class="container">
+            <div class="choose-fz">
+                <label>Размер шрифта: </label>
+                <div class="size-group">
+                        <input type="radio" id="text-mode1" name="radio" />
+                        <label for="text-mode1"><span>А</span></label>
+                
+                        <input type="radio" id="text-mode2" name="radio" checked="checked"/>
+                        <label for="text-mode2"><span>А</span></label>
+                        
+                        <input type="radio" id="text-mode3" name="radio" />
+                        <label for="text-mode3"><span>А</span></label>
+                </div>
+            </div>
+            <div class="choose-color">
+                <label>Цвет сайта: </label>
+                <div class="color-group">
+                       <button class="color-mode1"></button>
+                       <button class="color-mode2"></button>
+                </div>
+            </div>
+            <button class="normal-mode"><div class="eye-img "></div>Обычная версия</button>
+        </div>
+    </nav>
+    <!-- Шапка -->
     <div class="gt-header head-border" id="fadeborder">
         <div class="container">
             <div class="d-flex f-sb">
                 <!--Левая часть шапки-->
                 <div class="h-left-part">
-                    
+
                     <!-- Кнопка раскрытия меню разделов  -->
                     <div class="spinner-master2">
                         <input type="checkbox" id="spinner-form2" />
@@ -33,12 +57,12 @@
                             <div class="spinner2 diagonal part-2"></div>
                         </label>
                     </div>
-                    
+
                     <!-- Текстовый вариант логотипа ГБПОУ ГТ -->
                     <a class="a-reset" href="index.html" unselectable="on">
                         <div class="logo t-shadow">
                             <div class="name-gt">ГТМАУ</div>
-<!--                            <div class="full-name-gt hidden-sm-down">ГБПОУ <br> Георгиевский техникум </div>-->
+                            <!--                            <div class="full-name-gt hidden-sm-down">ГБПОУ <br> Георгиевский техникум </div>-->
                         </div>
                     </a>
 
@@ -48,11 +72,13 @@
                 <div class="h-right-part d-flex">
                     <!-- Инпут поиска по сайту + мобильный поиск -->
                     <div>
-                        <div class="disp-n" id="mobile-tcs"></div>    <!--  кнопка закрытия  -->
+                        <div class="disp-n" id="mobile-tcs"></div>
+                        <!--  кнопка закрытия  -->
                         <div class="hidden-sm-down search-input lb" id="top-search-f">
-                            <div class="shi"></div>                   <!--  Икнока "лупа" -->
+                            <div class="shi"></div>
+                            <!--  Икнока "лупа" -->
                             <input type="search" id="input-search" placeholder="поиск по сайту">
-                            
+
                             <!-- Результаты поиска -->
                             <div id="search-resultes">
                                 <a href="#" class="s-result">
@@ -83,58 +109,62 @@
                                 </a>
                             </div>
                         </div>
-                        <div id="ofside-search"></div> <!-- скрытие поиска -->
+                        <div id="ofside-search"></div>
+                        <!-- скрытие поиска -->
                     </div>
 
-                    <div class="hidden-md-up m-search" id="mobile-search"></div> <!-- активация мобильного поиска -->
+                    <div class="hidden-md-up m-search" id="mobile-search"></div>
+                    <!-- активация мобильного поиска -->
 
                     <a class="btn-40 button btn-white shadow inactive" href="account-settings.html" id="personalpage">
-                        <div class="hidden-md-up" >ЛК</div>
+                        <div class="hidden-md-up">ЛК</div>
                         <div class="hidden-sm-down">Личный кабинет</div>
                     </a>
                     <button class="btn-40 btn-white shadow " id="go-login">
                         Войти
                     </button>
 
-                    <a class="avatar img-size-40"> 
+                    <a class="avatar img-size-40">
                         <div class="profile-img" id="p-m-o"></div>
                     </a>
                 </div>
             </div>
 
         </div>
-    </div> 
+    </div>
 
-   <!-- Меню разделов сайта -->
+    <!-- Меню разделов сайта -->
     <div id="fmenu" class="full-menu">
 
-         <div class="poor-eyesight  hidden-lg-up">
-          <div class="container "><button class="shadow"><div class="eye-img"></div>Версия для слабовидящих </button></div>
-      </div>
+        <div class="poor-eyesight  hidden-lg-up">
+            <div class="container "><button class="shadow"><div class="eye-img"></div>Версия для слабовидящих </button></div>
+        </div>
 
-      
+
         <div class="container">
-           <h1 class="f-menu-heading"><span>Список разделов сайта<br><h4 class="mt-10">ГБПОУ ГТМАУ</h4> </span>
-           </h1>
+            <h1 class="f-menu-heading"><span>Список разделов сайта<br><h4 class="mt-10">ГБПОУ ГТМАУ</h4> </span>
+            </h1>
             <div class="row justify-content-center pb-10">
-                
-                    <div class="col-xs-12 col-md-8 ">
-                      <div class="sub-full-menu"><ul class="site-sections lb ">
-                        <li><a href="#">Абитуриентам</a></li>
-                        <li><a href="">Студентам</a></li>
-                        <li><a href="">Газета</a></li>
-                        <li><a href="">Карта сайта</a></li>
-                        <li><a href="schedule.html">Расписание</a></li>
-                        </ul></div>
-                       
+
+                <div class="col-xs-12 col-md-8 ">
+                    <div class="sub-full-menu">
+                        <ul class="site-sections lb ">
+                            <li><a href="#">Абитуриентам</a></li>
+                            <li><a href="">Студентам</a></li>
+                            <li><a href="">Газета</a></li>
+                            <li><a href="">Карта сайта</a></li>
+                            <li><a href="schedule.html">Расписание</a></li>
+                        </ul>
                     </div>
-                
+
+                </div>
+
             </div>
             <div class="row justify-content-center">
                 <div class="col-xs-12 col-md-4">
-                    
+
                     <ul class="site-sections">
-                       <li> <a href="">Главная страница</a></li>
+                        <li> <a href="">Главная страница</a></li>
                         <li class="dropdown">
                             <a href="#" data-toggle="dropdown">Библиотека ГТМАУ <div class="icon-arrow"></div></a>
                             <ul class="dropdown-menu">
@@ -162,7 +192,7 @@
                         </li>
                         <li> <a href="schedule.html">Расписание</a></li>
                         <li> <a href="">Сведения об образовательной организации</a> </li>
-                        <li>  <a href="">Трудоустройство</a></li>
+                        <li> <a href="">Трудоустройство</a></li>
                         <li> <a href="">Информационные ресурсы</a></li>
                         <li> <a href="">Фильмы о техникуме</a></li>
                         <li> <a href="">Антитеррористическая деятельность</a> </li>
@@ -170,7 +200,7 @@
                 </div>
                 <div class="col-xs-12 col-md-4">
                     <ul class="site-sections">
-                       <li><a href="">Студенческая жизнь</a></li>
+                        <li><a href="">Студенческая жизнь</a></li>
                         <li class="dropdown">
                             <a href="#" data-toggle="dropdown">Студентам <div class="icon-arrow"></div></a>
                             <ul class="dropdown-menu">
@@ -210,9 +240,10 @@
 
     <!-- Боковое меню -->
     <div id="personal-menu" class="personal-menu">
-       
-        <div class="p-header"> <!-- шапка бокового меню -->
-           
+
+        <div class="p-header">
+            <!-- шапка бокового меню -->
+
             <!-- 1 отображать когда не выполнен вход -->
             <h6 class="pheding active">Личный кабинет</h6>
 
@@ -229,18 +260,19 @@
         </div>
         <div class="login-cont active">
             <div class="login active">
-               <h6>Добро пожаловать</h6>
+                <h6>Добро пожаловать</h6>
                 <input type="login" placeholder="email" spellcheck="false">
                 <input type="password" placeholder="Пароль">
-                <a class="forget">Забыли пароль?</a> <!--класс active для показа (после неверного ввода) -->
+                <a class="forget">Забыли пароль?</a>
+                <!--класс active для показа (после неверного ввода) -->
                 <div class="d-flex">
                     <button class="btn-primory btn-40" id="enter-to">Войти</button>
                     <button class="t-grey btn-40" id="registration">Регистрация</button>
                 </div>
             </div>
             <div class="registration">
-              <h6>Регистрация</h6>
-               <input type="name" placeholder="Имя">
+                <h6>Регистрация</h6>
+                <input type="name" placeholder="Имя">
                 <input type="lastname" placeholder="Фамилия">
                 <input type="emal" placeholder="email" spellcheck="false">
                 <input type="password" placeholder="Пароль">
@@ -248,29 +280,29 @@
                     <button class="t-grey btn-40" id="back-to-enter">Назад</button>
                     <button class="btn-primory btn-40" id="next-reg-step">Продолжить</button>
                 </div>
-                
+
             </div>
             <div class="congratulations">
                 <h6>Готово!</h6>
                 <p>Письмо с подтверждением регистрации отправлено на ваш email адрес, следуйте инструкциям.</p>
                 <div class="d-flex">
                     <button class=" btn-primory btn-40" id="back-to-enter2">Выполнить вход</button>
+                </div>
             </div>
-            </div>
-            
+
         </div>
-        <!-- контейнер с датой и распианием --> 
+        <!-- контейнер с датой и распианием -->
         <div class="rasp-cont">
             <h5 class="title bbtn">Расписание на <a href="">25.03.17</a></h5>
             <div class="select-box-wrapper">
-                   <div class="select-box">
+                <div class="select-box">
                     <button class="s-item selected">124</button>
                     <button class="s-item">321</button>
                     <button class="s-item">332</button>
                 </div>
                 <a class="btn-25 btn-primory shadow-sm btn-plus" href="">+</a>
-                
-             
+
+
             </div>
             <div class="p-menu-table">
                 <table>
@@ -310,15 +342,15 @@
                         </tr>
                     </tbody>
                 </table>
-                
-                
+
+
             </div>
             <div class="exit-btn">Выйти</div>
         </div>
-    
+
     </div>
     <!--конец бокового меню-->
-    
+
     <div class="h65"></div>
     <div class="sub-header-menu hidden-md-down">
         <div class="container">
@@ -330,13 +362,13 @@
             <button><div class="eye-img "></div>Версия для слабовидящих </button>
         </div>
     </div>
-    
-    
+
+
     <div class="carousel">
         <img src="res/img/corucel.JPG" alt="">
     </div>
 
-    
+
 
     <div class="tab">
         <div class="bbtn bg-white">
@@ -352,7 +384,7 @@
                 <section class="container max-width-90">
                     <div class="row news-row">
                         <a href="page-news.html" class="col-sm-12 col-md-6 col-lg-3 col-news">
-                            <div  class="news-prev" style="background-image: url(http://гео-тех.рф/wp-content/uploads/2017/07/IMG-20170705-WA0002-1-768x576.jpg)">
+                            <div class="news-prev" style="background-image: url(http://гео-тех.рф/wp-content/uploads/2017/07/IMG-20170705-WA0002-1-768x576.jpg)">
                                 <img class="news-prew-size" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQcAAAClAQMAAABrxqq1AAAAA1BMVEUmTKgfeyxbAAAAHElEQVQYGe3BAQ0AAADCIPunfg43YAAAAAAAnAsV6gAB/QBKcQAAAABJRU5ErkJggg==">
                             </div>
                             <div class="news-info">
@@ -467,7 +499,7 @@
                     <div class="row">
                         <a href="all-news.html" class="col-sm-12 col-md-6 col-lg-3 col-news all-news">
                             <div class="news-description h6 justify-content-end">
-                               <div class="all-n-arrow"></div>Все новости
+                                <div class="all-n-arrow"></div>Все новости
                             </div>
                         </a>
                     </div>
@@ -535,9 +567,9 @@
                     </div>
                     <div class="row">
                         <a href="#" class="col-sm-12 col-md-6 col-lg-3 col-news all-news">
-                           
+
                             <div class="news-description h6 justify-content-end">
-                               <div class="all-n-arrow"></div>Все объявления
+                                <div class="all-n-arrow"></div>Все объявления
                             </div>
                         </a>
                     </div>
@@ -545,82 +577,82 @@
             </div>
         </section>
     </div>
-    
+
 
 
     <div class="bg-white bttn">
         <div class="container text-center line-heading">Есть чем гордиться!</div>
     </div>
     <div class="bg-primary gt-stat">
-       <div class="container">
-           <div class="row text-center">
-            <div class="col-12 col-sm-4">
-                <div class="sm-line">Обучаем</div>
-                <div class="b-line">27</div>
-                <div class="sm-line">Различным специальностям</div>
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-12 col-sm-4">
+                    <div class="sm-line">Обучаем</div>
+                    <div class="b-line">27</div>
+                    <div class="sm-line">Различным специальностям</div>
+                </div>
+                <div class="col-12 col-sm-4">
+                    <div class="sm-line">Входим в</div>
+                    <div class="b-line">Топ 100</div>
+                    <div class="sm-line">Лучших техникумов России</div>
+                </div>
+                <div class="col-12 col-sm-4">
+                    <div class="sm-line">Удостоины</div>
+                    <div class="b-line">78</div>
+                    <div class="sm-line">Наградам в различных областях</div>
+                </div>
+
             </div>
-            <div class="col-12 col-sm-4">
-                <div class="sm-line">Входим в</div>
-                <div class="b-line">Топ 100</div>
-                <div class="sm-line">Лучших техникумов России</div>
-            </div>
-            <div class="col-12 col-sm-4">
-                <div class="sm-line">Удостоины</div>
-                <div class="b-line">78</div>
-                <div class="sm-line">Наградам в различных областях</div>
-            </div>
- 
         </div>
-       </div>    
     </div>
     <div class="bg-white bbtn">
         <div class="container text-center line-heading">Дополнительное образование</div>
     </div>
     <div class="courses">
         <div class="container">
-           <div class="row text-center">
-            <div class="col-12 col-sm-4">
-                <a href="#" class="course c-shadow ">
-                    <h5>Автошкола</h5>
-                    <div class="car-icon"></div>
-                </a>
+            <div class="row text-center">
+                <div class="col-12 col-sm-4">
+                    <a href="#" class="course c-shadow ">
+                        <h5>Автошкола</h5>
+                        <div class="car-icon"></div>
+                    </a>
+                </div>
+                <div class="col-12 col-sm-4 ">
+                    <a href="#" class="course sm c-shadow">
+                        <h5>Курсы флориста</h5>
+                        <div class="flover-icon"></div>
+                    </a>
+                </div>
+                <div class="col-12 col-sm-4">
+                    <a href="#" class="course  c-shadow">
+                        <h5 class="bold">Курсы парикмахера</h5>
+                        <div class="cut-icon"></div>
+                    </a>
+
+                </div>
+
             </div>
-            <div class="col-12 col-sm-4 ">
-               <a href="#" class="course sm c-shadow">
-                    <h5>Курсы флориста</h5>
-                    <div class="flover-icon"></div>
-                </a>
-            </div>
-            <div class="col-12 col-sm-4">
-               <a href="#" class="course  c-shadow">
-                    <h5 class="bold">Курсы парикмахера</h5>
-                    <div class="cut-icon"></div>
-                </a>
-                
-            </div>
- 
         </div>
-       </div> 
     </div>
     <div class="other-category">
         <div class="container">
             <div class="row">
                 <div class="col-3">
-                     <div class="other-c-logo">М</div>
-                     <span class="hidden-md-down">Министерство <br>образования</span>
-                     
+                    <div class="other-c-logo">М</div>
+                    <span class="hidden-md-down">Министерство <br>образования</span>
+
                 </div>
                 <div class="col-3">
-                     <div class="other-c-logo">М</div>
-                     <span class="hidden-md-down">Министерство <br>образования</span>
+                    <div class="other-c-logo">М</div>
+                    <span class="hidden-md-down">Министерство <br>образования</span>
                 </div>
                 <div class="col-3">
-                     <div class="other-c-logo">М</div>
-                     <span class="hidden-md-down">Министерство <br>образования</span>
+                    <div class="other-c-logo">М</div>
+                    <span class="hidden-md-down">Министерство <br>образования</span>
                 </div>
                 <div class="col-3">
-                     <div class="other-c-logo">М</div>
-                     <span class="hidden-md-down">Министерство <br>образования</span>
+                    <div class="other-c-logo">М</div>
+                    <span class="hidden-md-down">Министерство <br>образования</span>
                 </div>
             </div>
         </div>
@@ -629,39 +661,43 @@
         <div class="container">
             <div class="row ft-col">
                 <div class=" col-12 col-sm12 col-md-4 col-lg-3">
-                   <div class="ml-20">
-                       <div class="logo t-shadow">
-                        <div class="name-gt">ГТМАУ</div>
-<!--                        <div class="full-name-gt">ГБПОУ <br> Георгиевский техникум </div>-->
+                    <div class="ml-20">
+                        <div class="logo t-shadow">
+                            <div class="name-gt">ГТМАУ</div>
+                            <!--                        <div class="full-name-gt">ГБПОУ <br> Георгиевский техникум </div>-->
+                        </div>
+                        <p>Разработка © 2017</p>
+                        <p><a href="">IT Департамент</a></p>
                     </div>
-                    <p>Разработка © 2017</p>
-                    <p><a href="">IT Департамент</a></p>
-                   </div>
-                    
+
                 </div>
                 <div class="col-12 col-sm-6  col-md-4 col-lg-6">
                     <p class="heading">Контакты</p>
                     <div class="adress">
                         <div class="location-icon"></div><span>Адрес: </span> Ставропольский край, г.Георгиевск, ул. Калинина, д. 111, <br>ул. Октябрьская, д. 59.
                     </div>
-                    <div class="phone"> <div class="phone-icon"></div> <span>Телефон приёмной: </span>(87951) 6-17-62</div>
-                    <div class="mail"><div class="mail-icon"></div><span>Эл. почта: </span>geo-teh@mail.ru</div>
+                    <div class="phone">
+                        <div class="phone-icon"></div> <span>Телефон приёмной: </span>(87951) 6-17-62</div>
+                    <div class="mail">
+                        <div class="mail-icon"></div><span>Эл. почта: </span>geo-teh@mail.ru</div>
                 </div>
                 <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                     <p class="heading">Наши страницы в соц. сетях</p>
                     <div class="social">
-                        <a href=""><div class="vk-icon"></div>Вконтакте</a>
+                        <a href="">
+                            <div class="vk-icon"></div>Вконтакте</a>
                         <br>
-                        <a href=""><div class="insta-icon"></div>Instagram</a>
+                        <a href="">
+                            <div class="insta-icon"></div>Instagram</a>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
     <div class="s-footer">
-       <div class="hidden-md-up" >ГБПОУ ГТМАУ</div>
+        <div class="hidden-md-up">ГБПОУ ГТМАУ</div>
         <div class="hidden-sm-down">ГБПОУ Георгиевский техникум механизации, автоматизации и управления.</div>
-        
+
     </div>
 
 
