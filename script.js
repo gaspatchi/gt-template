@@ -231,12 +231,46 @@ document.addEventListener('DOMContentLoaded', () => {
     raspOffside.addEventListener('click', () => {
         raspSearch.classList.remove('active');
         raspOffside.classList.remove('active');
-        
     });
 });
 
 
+document.addEventListener('DOMContentLoaded', () => {
+    var vimOn = document.querySelector("#visually-impaired-mode-on"),
+        vimOff = document.querySelector(".normal-mode"),
+        vimOnMob = document.querySelector("#visually-impaired-mode-on-mobile"),
+        bodyVim = document.querySelector('#vim');
+    
+    var vimWite = document.querySelector('.color-mode1'),
+        vimBlack = document.querySelector('.color-mode2');
+    
+    var vimTextSmall = document.querySelector('#text-mode1'),
+        vimTextNormal = document.querySelector('#text-mode2'),
+        vimTextBig = document.querySelector('#text-mode3');
 
+    vimOn.addEventListener('click', () => {
+        bodyVim.classList.add('vim-on');
+    });
+    
+    vimOnMob.addEventListener('click', () => {
+        bodyVim.classList.add('vim-on');
+    });
+    
+    vimOff.addEventListener('click', () => {
+        bodyVim.classList.remove('vim-on');
+    });
+    
+    vimBlack.addEventListener('click', () => {
+        bodyVim.classList.add('black');
+    });
+    vimWite.addEventListener('click', () => {
+        bodyVim.classList.remove('black');
+    });
+    
+    vimTextSmall.addEventListener('click', () => {
+        bodyVim.classList.add('small-text');
+    });
+});
 document.addEventListener('DOMContentLoaded', () => {
     
     
@@ -244,7 +278,7 @@ document.addEventListener('DOMContentLoaded', () => {
     var editInput = document.querySelector(".edit-input");
 
     editIcon.addEventListener('click', () => {
-        editIcon.classList.toggle('edit');
+        editIcon.classList.toggle('save');
         editInput.readOnly = false;
         editInput.value = '';
         editInput.focus();
