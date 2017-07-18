@@ -7,12 +7,40 @@
     <title>components</title>
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&amp;subset=cyrillic" rel="stylesheet">
-    <link rel="stylesheet" href="res/css/main.css">
+    <link rel="stylesheet" href="assets/css/main.css">
     <script src="script.js" type="text/javascript"></script>
 </head>
 
-<body>
-
+<body id="vim">
+    <nav class="visually-impaired-mode">
+        <div class="container">
+            <div class="choose-fz">
+                <label class="hidden-sm-down">Размер шрифта: </label>
+                <div class="size-group">
+                        <input type="radio" id="text-mode1" name="radio" checked="checked" />
+                        <label for="text-mode1"><span>А</span></label>
+                
+                        <input type="radio" id="text-mode2" name="radio" />
+                        <label for="text-mode2"><span>А</span></label>
+                        
+                        <input type="radio" id="text-mode3" name="radio" />
+                        <label for="text-mode3"><span>А</span></label>
+                </div>
+            </div>
+            <div class="choose-color">
+                <label class="hidden-sm-down">Цвет сайта: </label>
+                <div class="color-group">
+                       <button class="color-mode1"></button>
+                       <button class="color-mode2"></button>
+                </div>
+            </div>
+            <button class="normal-mode">
+                <div class="eye-img "></div>
+                <span class=" hidden-sm-down">Обычная версия</span>
+                <span class="hidden-md-up">Отмена</span>
+            </button>
+        </div>
+    </nav>
     <!-- Шапка -->
     <div class="gt-header head-border" id="fadeborder">
         <div class="container">
@@ -109,7 +137,7 @@
     <div id="fmenu" class="full-menu">
 
         <div class="poor-eyesight  hidden-lg-up">
-            <div class="container "><button class="shadow"><div class="eye-img"></div>Версия для слабовидящих </button></div>
+            <div class="container"><button class="shadow" id="visually-impaired-mode-on-mobile"><div class="eye-img"></div>Версия для слабовидящих </button></div>
         </div>
 
 
@@ -331,7 +359,7 @@
             <a href="">Газета</a>
             <a href="">Карта сайта</a>
             <a href="schedule.html">Расписание</a>
-            <button><div class="eye-img "></div>Версия для слабовидящих </button>
+            <button id="visually-impaired-mode-on"><div class="eye-img "></div>Версия для слабовидящих </button>
         </div>
     </div>
 

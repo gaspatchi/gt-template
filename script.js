@@ -1,4 +1,56 @@
 document.addEventListener('DOMContentLoaded', () => {
+    var vimOn = document.querySelector("#visually-impaired-mode-on"),
+        vimOff = document.querySelector(".normal-mode"),
+        vimOnMob = document.querySelector("#visually-impaired-mode-on-mobile"),
+        bodyVim = document.querySelector('#vim');
+    
+    var vimWite = document.querySelector('.color-mode1'),
+        vimBlack = document.querySelector('.color-mode2');
+    
+    var vimTextNormal = document.querySelector('#text-mode1'),
+        vimTextLarge = document.querySelector('#text-mode2'),
+        vimTextMoreLarge = document.querySelector('#text-mode3');
+
+    vimOn.addEventListener('click', () => {
+        bodyVim.classList.add('vim-on');
+    });
+    
+    vimOnMob.addEventListener('click', () => {
+        bodyVim.classList.add('vim-on');
+    });
+    
+    vimOff.addEventListener('click', () => {
+        bodyVim.classList.remove('vim-on');
+    });
+    
+    vimBlack.addEventListener('click', () => {
+        bodyVim.classList.add('black');
+    });
+    vimWite.addEventListener('click', () => {
+        bodyVim.classList.remove('black');
+    });
+    
+    
+    
+    vimTextLarge.addEventListener('click', () => {
+        bodyVim.classList.remove('more-large-text');
+        bodyVim.classList.add('large-text');
+    });
+    
+    vimTextMoreLarge.addEventListener('click', () => {
+        bodyVim.classList.remove('large-text');
+        bodyVim.classList.add('more-large-text');
+    });
+    
+    vimTextNormal.addEventListener('click', () => {
+        bodyVim.classList.remove('large-text');
+        bodyVim.classList.remove('more-large-text');
+    });
+});
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
     
     
 
@@ -161,18 +213,10 @@ document.addEventListener('DOMContentLoaded', () => {
         avatarPrew.classList.remove('active');
     });
     
-    
+});
 
-
-
-
-
-
-
-
-
-
-    // Ð¢Ð°Ð±Ñ‹ Ð½Ð¾Ð²Ð¾ÑÑ‚ÐµÐ¹ 
+document.addEventListener('DOMContentLoaded', () => {
+  // Ð¢Ð°Ð±Ñ‹ Ð½Ð¾Ð²Ð¾ÑÑ‚ÐµÐ¹ 
     var tab_btn = document.querySelector("#tab-btn");
     tab_btn.addEventListener("click", function (e) {
         var btn = tab_btn.children;
@@ -188,28 +232,7 @@ document.addEventListener('DOMContentLoaded', () => {
             page[e.target.index].className = "active";
         }
     }, false);
-
-
-
-    var favorBtn = document.querySelector(".favorBtn");
-    var favorContext = document.querySelector(".context-menu");
-
-    favorBtn.addEventListener('click', () => {
-        favorContext.classList.toggle('active');
-    });
-
-    var dateSelector = document.querySelector(".table-date");
-    var dateCover = document.querySelector(".date.cover");
-
-    dateSelector.addEventListener('click', () => {
-        dateCover.classList.toggle('select');
-    });
-
 });
-
-
-
-
 
 
 
@@ -225,7 +248,6 @@ document.addEventListener('DOMContentLoaded', () => {
     raspSearchInput.addEventListener('click', () => {
         raspSearch.classList.add('active');
         raspOffside.classList.add('active');
-        
     });
     
     raspOffside.addEventListener('click', () => {
@@ -236,43 +258,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 document.addEventListener('DOMContentLoaded', () => {
-    var vimOn = document.querySelector("#visually-impaired-mode-on"),
-        vimOff = document.querySelector(".normal-mode"),
-        vimOnMob = document.querySelector("#visually-impaired-mode-on-mobile"),
-        bodyVim = document.querySelector('#vim');
-    
-    var vimWite = document.querySelector('.color-mode1'),
-        vimBlack = document.querySelector('.color-mode2');
-    
-    var vimTextSmall = document.querySelector('#text-mode1'),
-        vimTextNormal = document.querySelector('#text-mode2'),
-        vimTextBig = document.querySelector('#text-mode3');
+    var favorBtn = document.querySelector(".favorBtn");
+    var favorContext = document.querySelector(".context-menu");
 
-    vimOn.addEventListener('click', () => {
-        bodyVim.classList.add('vim-on');
+    favorBtn.addEventListener('click', () => {
+        favorContext.classList.toggle('active');
     });
-    
-    vimOnMob.addEventListener('click', () => {
-        bodyVim.classList.add('vim-on');
+
+    var dateSelector = document.querySelector(".table-date");
+    var dateCover = document.querySelector(".date.cover");
+
+    dateSelector.addEventListener('click', () => {
+        dateCover.classList.toggle('select');
     });
-    
-    vimOff.addEventListener('click', () => {
-        bodyVim.classList.remove('vim-on');
-    });
-    
-    vimBlack.addEventListener('click', () => {
-        bodyVim.classList.add('black');
-    });
-    vimWite.addEventListener('click', () => {
-        bodyVim.classList.remove('black');
-    });
-    
-    vimTextSmall.addEventListener('click', () => {
-        bodyVim.classList.add('small-text');
-    });
-});
-document.addEventListener('DOMContentLoaded', () => {
-    
     
     var editIcon = document.querySelector(".edit-icon");
     var editInput = document.querySelector(".edit-input");
@@ -283,8 +281,9 @@ document.addEventListener('DOMContentLoaded', () => {
         editInput.value = '';
         editInput.focus();
     });
+ });
 
-
+document.addEventListener('DOMContentLoaded', () => {
     var newPassword = document.querySelector(".new-password");
     var oldPass = document.querySelector(".old-password");
     var writePass = document.querySelector(".write-new-password");
@@ -318,4 +317,9 @@ document.addEventListener('DOMContentLoaded', () => {
         subCheck.classList.toggle('subscription-ok');
     });
 });
+
+
+
+
+
 
