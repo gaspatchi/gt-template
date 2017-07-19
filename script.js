@@ -46,6 +46,19 @@ document.addEventListener('DOMContentLoaded', () => {
         bodyVim.classList.remove('large-text');
         bodyVim.classList.remove('more-large-text');
     });
+    
+    
+    var spinner = document.querySelector('.toast-buble-container');
+    var spinnerOk = document.querySelector('.toast-buble button');
+    
+    
+    spinnerOk.addEventListener('click', () => {
+        spinner.classList.remove('active');
+    });
+    function gtAlrt() {
+        spinner.classList.add('active');
+    }
+    setTimeout(gtAlrt, 3000);
 });
 
 

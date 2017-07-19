@@ -987,12 +987,20 @@ input:focus ~ label {
         justify-content: space-between;
         font-size: 14px;
         order: 999;
+        .data{
+                margin-right: 5px;
+            }
+        >*{
+            white-space: nowrap;
+        }
     }
     .category{
         font-size: 12px;
         border: 1px solid $grey;
         border-radius: 15px;
         padding: 0 13px;
+        text-overflow: ellipsis;
+        overflow: hidden;
         
     }
     .news-description{
@@ -2517,14 +2525,14 @@ border-bottom: 0;
 
 
 .subscription-ok{
-    background: url("/assets/subscription-ok.svg") center no-repeat;
+    background: url("/assets/icons/subscription-ok.svg") center no-repeat;
     width: 30px;
     height: 30px;
     margin: 0 10px 0 10px;
     cursor: pointer;
 }
 .subscription-err{
-    background: url("/assets/subscription-err.svg") center no-repeat;
+    background: url("/assets/icons/subscription-err.svg") center no-repeat;
     width: 30px;
     height: 30px;
     margin: 0 10px 0 10px;
@@ -2784,7 +2792,7 @@ body.vim-on{
     
     .site-sections a, .f-menu-heading, #tab-btn span,
     .sub-header-menu .container a, .line-heading, .gt-stat .col-12 *,
-    .courses .course h5, .after-feedback
+    .courses .course h5, .after-feedback, .site-sections > li
                                                      {color: black !important; text-shadow: none;}
 
     .dropdown .icon-arrow{background: url("/assets/icons/dropdown-icon-black.svg") center no-repeat;}
@@ -2821,7 +2829,7 @@ body.vim-on{
     }
     .other-category{border-top: 1px solid white}
     .other-category, footer, .visually-impaired-mode, .s-footer, .cover-blur.news, .pagination,.cover-blur,
-    .container-wp-page .content img{
+    .container-wp-page .content img, .carousel{
         filter: invert(100%);
     }
     
@@ -2874,7 +2882,8 @@ body.vim-on{
                                                 {font-size: 17px !important;}
     .site-sections a, .col-news .news-description,
     footer .heading, .s-footer, .news-widgets .widget .heading,
-    .container-wp-page p, .heading-wp-page .date,.primary-table .table-cont h6
+    .container-wp-page p, .heading-wp-page .date,.primary-table .table-cont h6, 
+    .sub-header-menu .container a
     
                                                 {font-size: 19px !important;}
     .gt-stat .sm-line, .courses .course h5, .col-news-all .news-head-line,
@@ -2898,11 +2907,128 @@ body.vim-on{
 
 
 
+.toast-buble-container{
+    position: fixed;
+    bottom: -100px;
+    right: 0;
+    width: 100%;    
+    z-index: 999999;
+    display: flex;
+    padding: 10px;
+    transition: 0.2s bottom ease-in-out;
+    justify-content: center;
+    .toast-buble{
+        box-shadow: 0;
+        transition: 0.5s box-shadow ease-in-out;
+        display: flex;
+        align-items: center;
+        padding: 10px 14px 10px 30px;
+        border-radius: 100px;
+        color: white;
+        
+        h5{
+            font-size: 16px;
+            margin-bottom: 0;
+            margin-top: -2px;
+            font-weight: 600;
+        }
+        button{
+            padding: 3px 12px;
+            margin-left: 15px;
+            font-weight:600;
+            color: white;
+            background: rgba(0,0,0,0.1);
+            border: rgba(0,0,0,1);
+            &:hover{
+                background: rgba(0,0,0,0.2);
+            }
+            &:active{
+                background: rgba(0,0,0,0.3);
+            }
+        }
+    }
+}
 
 
+.toast-buble.warning{
+    background: #F5D91D;
+    h5, button{
+        color: $black;
+    }
+}
+.toast-buble.error{
+    background: #E12F2B;
+}
+.toast-buble.complete{
+    background: #10AC84;
+}
+.toast-buble.info{
+    background: #A1A1A1;
+    h5{
+        font-size: 16px;
+        margin-bottom: 0;
+    }
+}
+.toast-buble-container.active{
+    .toast-buble{
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        
+    }
+    
+    display: flex !important;
+    bottom: 15px;
+}
+.spinner-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.spinner-wrapper.very-small{.spinner > div {width: 10px; height: 10px;}}
+.spinner-wrapper.small     {.spinner > div {width: 13px; height: 13px;}}
+.spinner-wrapper.large     {.spinner > div {width: 17px; height: 17px;}}
 
+.spinner {
+  width: 70px;
+  text-align: center;
+}
 
+.spinner > div {
+  width: 15px;
+  height: 15px;
 
+  border-radius: 100%;
+  display: inline-block;
+  -webkit-animation: sk-bouncedelay 1s infinite ease-in-out both;
+  animation: sk-bouncedelay 1s infinite ease-in-out both;
+}
+.bounce1{background: #E12F2B}
+.bounce2{background: #F5D91D}
+.bounce3{background: #10AC84}
+.spinner .bounce1 {
+    
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+
+.spinner .bounce2 {
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+
+@-webkit-keyframes sk-bouncedelay {
+  0%, 80%, 100% { -webkit-transform: scale(0) }
+  40% { -webkit-transform: scale(1.0) }
+}
+
+@keyframes sk-bouncedelay {
+  0%, 80%, 100% { 
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  } 40% { 
+    -webkit-transform: scale(1.0);
+    transform: scale(1.0);
+  }
+}
 
 
 
@@ -3238,6 +3364,14 @@ body.vim-on{
 }
 }
 @media (max-width: 574px) {
+    .toast-buble-container {
+        .toast-buble {
+            h5,button {
+                font-size: 13px;
+
+            }
+        }
+    }
     .rasp-result {
     &:hover{
         background: rgba(0,0,0,0.05)
