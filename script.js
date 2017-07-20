@@ -108,46 +108,23 @@ document.addEventListener('DOMContentLoaded', () => {
     Element.prototype.hasClass = function (className) {
         return this.className && new RegExp("(^|\\s)" + className + "(\\s|$)").test(this.className);
     };
-
     //ĐĐşŃĐ¸Đ˛Đ°ŃĐ¸Ń ĐżĐžĐ¸ŃĐşĐ° 
-    var topSearch = document.getElementById('top-search-f');
+    var topSearch= document.querySelector('.search-input');
+    var mSearch= document.querySelector('.m-search');
     var searchOfside = document.getElementById('ofside-search');
-    var searchResultes = document.getElementById('search-resultes');
+
     topSearch.addEventListener('click', () => {
         searchOfside.classList.add("active-search");
-        topSearch.classList.add("active-search-cover");
-        searchResultes.classList.add("active-search-resultes");
+        topSearch.classList.add("show");
+    });
+    mSearch.addEventListener('click', () => {
+        searchOfside.classList.add("active-search");
+        topSearch.classList.add("show");
     });
     searchOfside.addEventListener('click', () => {
         searchOfside.classList.remove("active-search");
-        topSearch.classList.remove("active-search-cover");
-        searchResultes.classList.remove("active-search-resultes");
+        topSearch.classList.remove("show");
     });
-
-    //ĐĐşŃĐ¸Đ˛Đ°ŃĐ¸Ń ĐźĐžĐąĐ¸ĐťŃĐ˝ĐžĐłĐž ĐżĐžĐ¸ŃĐşĐ°
-    var mobileSearch = document.getElementById('mobile-search');
-    var tmSearch = document.getElementsByClassName('tmsearch');
-    var mobileSearchclose = document.getElementById('mobile-tcs');
-    var inputActive = document.getElementById('input-search');
-    var mtopSearch = document.getElementById('m-top-search-f');
-    var msearchResultes = document.getElementById('m-search-resultes');
-    mobileSearch.addEventListener('click', () => {
-        topSearch.classList.remove("hidden-sm-down");
-        topSearch.classList.add("mobile-search-cover");
-        searchResultes.classList.add("mobile-search-resultes");
-        mobileSearchclose.classList.add("mtsc");
-        inputActive.focus();
-    });
-    mobileSearchclose.addEventListener('click', () => {;
-        topSearch.classList.remove("mobile-search-cover");
-        topSearch.classList.add("hidden-sm-down");
-        searchResultes.classList.remove("mobile-search-resultes");
-        mobileSearchclose.classList.remove("mtsc");
-        searchOfside.classList.remove("active-search");
-        inputActive.blur;
-    });
-
-
     // ĐžŃĐşŃŃŃĐ¸Đľ ĐąĐžĐşĐžĐ˛ĐžĐłĐž ĐźĐľĐ˝Ń 
     var avatar = document.getElementById('p-m-o');
     var goLogin = document.getElementById('go-login');
